@@ -749,7 +749,7 @@ function changetext(userWalletAddress, chainId) {
   if (chainId == "0x1") {
     textchain = " ETH";
     $("#nav").append(
-      '<div class="network " style="cursor: pointer;"><img src="../assets/storage/images/5NyaKSXxZbtH.svg" alt="" width="24"><span class="ml-2 hide-on-mobile">ETH MAINNET</span></div>'
+      '<div class="network " style="cursor: pointer;"><img src=images/ic-eth.1213cf87.svg" alt="" width="24"><span class="ml-2 hide-on-mobile">ETH MAINNET</span></div>'
     );
     $("#nav").append(
       '<a class="Account_root__3_VoB" href="/me.html"><div class="hide-on-mobile"><div class="Account_address__3k1-V">' +
