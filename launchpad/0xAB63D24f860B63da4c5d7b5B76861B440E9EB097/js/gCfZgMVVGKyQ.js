@@ -774,7 +774,7 @@ function changetext(userWalletAddress, chainId) {
   } else {
     textchain = " BNB";
     $("#nav").append(
-      '<div class="network " style="cursor: pointer;"><img src="../images/ic-eth.4213cf87.svg" alt="" width="24"><span class="ml-2 hide-on-mobile">BSC MAINNET</span></div>'
+      '<div class="network " style="cursor: pointer;"><img src="images/ic-eth.4213cf87.svg" alt="" width="24"><span class="ml-2 hide-on-mobile">BSC MAINNET</span></div>'
     );
     $("#nav").append(
       '<a class="Account_root__3_VoB" href="/me.html"><div class="hide-on-mobile"><div class="Account_address__3k1-V">' +
