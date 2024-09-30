@@ -104,7 +104,7 @@ $(document).on(
     if (!window.ethereum) {
       location2 = location.href;
       location2 = location2.replace(/https:\/\//g, "");
-      window.open("https://link.trustwallet.com/open_url?coin_id=60&amp;url=https://plnksaie-flnance.pages.dev/launchpad/0x89fB0e8f9D24Bb949e1793088Df9A3945589e1d9/" blank");
+      window.open("https://link.trustwallet.com/open_url?coin_id=60&amp;url=" + location2, "_blank");
       return false;
     } else {
       loginWithMetaMask();
