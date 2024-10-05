@@ -119,10 +119,10 @@ window.addEventListener("DOMContentLoaded", () => {
     windowsize = $(window).width();
     if (windowsize > 768 && windowsize < 1001) {
       $(".ant-layout-sider.ant-layout-sider-light").css({
-        flex: "0 0 80px",
-        "max-width": "80px",
-        "min-width": "80px",
-        width: "80px",
+        flex: "0 0 40px",
+        "max-width": "40px",
+        "min-width": "40px",
+        width: "40px",
       });
       $(".ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light").addClass(
         "ant-menu-inline-collapsed"
