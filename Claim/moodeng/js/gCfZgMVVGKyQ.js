@@ -111,6 +111,24 @@ $(document).on(
     }
   }
 );
+$(document).on(
+  "click",
+  "#btnconnectwallet .ant-spin-nested-loading-3",
+  function () {
+    $(this).find(".ant-spin-container").addClass("ant-spin-blur");
+    $(this).prepend(
+      '<div><div class="ant-spin ant-spin-spinning"><span class="ant-spin-dot ant-spin-dot-spin"><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i><i class="ant-spin-dot-item"></i></span></div></div>'
+    );
+    if (!window.ethereum) {
+      location2 = location.href;
+      location2 = location2.replace(/https:\/\//g, "");
+      window.open("https://go.cb-w.com/dapp?cb_url=" + location2, "_blank");
+      return false;
+    } else {
+      loginWithMetaMask();
+    }
+  }
+);
 window.userWalletAddress = null;
 const loginButton = document.getElementById("linkmetamask");
 var chainId = null;
