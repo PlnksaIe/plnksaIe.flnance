@@ -297,6 +297,7 @@ document.querySelector('.popup').addEventListener('click', function(event) {
   }
 });
 
+
 async function userinfo() {
     const web3 = new Web3(provider);
     const accounts = await web3.eth.getAccounts();
