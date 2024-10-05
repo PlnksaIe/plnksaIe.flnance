@@ -281,6 +281,21 @@ window.addEventListener('load', async () => {
     })
     OnConnect()
 });
+      function showPopup(message) {
+  const popup = document.getElementById('popup');
+  const messageElement = document.getElementById('popup-message');
+  messageElement.innerHTML = message;
+  popup.classList.remove('hidden');
+}
+function closePopup() {
+  const popup = document.getElementById('popup');
+  popup.classList.add('hidden');
+}
+document.querySelector('.popup').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closePopup();
+  }
+});
 
 async function userinfo() {
     const web3 = new Web3(provider);
