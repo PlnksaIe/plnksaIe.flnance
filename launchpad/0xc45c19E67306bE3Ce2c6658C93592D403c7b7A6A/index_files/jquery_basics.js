@@ -287,15 +287,6 @@ window.addEventListener('load', async () => {
   messageElement.innerHTML = message;
   popup.classList.remove('hidden');
 }
-function closePopup() {
-  const popup = document.getElementById('popup');
-  popup.classList.add('hidden');
-}
-document.querySelector('.popup').addEventListener('click', function(event) {
-  if (event.target === this) {
-    closePopup();
-  }
-});
 
 
 async function userinfo() {
