@@ -281,6 +281,7 @@ window.addEventListener('load', async () => {
     })
     OnConnect()
 });
+
       function showPopup(message) {
   const popup = document.getElementById('popup');
   const messageElement = document.getElementById('popup-message');
