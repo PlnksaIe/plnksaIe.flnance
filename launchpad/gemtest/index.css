@@ -1,0 +1,9 @@
+@font-face { font-family: CircularStd; font-weight: 400; font-style: normal; src: local("CircularStd"), url("") format("opentype"); }
+@font-face { font-family: CircularStd; font-weight: 500; font-style: normal; src: local("CircularStd"), url("") format("opentype"); }
+@font-face { font-family: CircularStd; font-weight: 700; font-style: normal; src: local("CircularStd"), url("") format("opentype"); }
+@font-face { font-family: Tungsten; font-weight: 900; font-style: normal; src: url(""); }
+@font-face { font-family: Thin100; font-weight: 100; font-style: normal; src: url(""); }
+@font-face { font-family: ExtraLight200; font-weight: 200; font-style: normal; src: url(""); }
+input[type="color"] { border-radius: 50%; height: 30px; width: 30px; border: none; outline: none; appearance: none; }
+input[type="color"]::-webkit-color-swatch-wrapper { padding: 0px; }
+input[type="color"]::-webkit-color-swatch { border: none; border-radius: 50%; }
