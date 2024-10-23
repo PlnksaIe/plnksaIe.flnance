@@ -8,7 +8,7 @@ let provider;
 let saleid;
 let pingtaizongzhi = 0;
 
-const contractAddress = "0x0A62ad643251758519087aFe0193bd1B9fC10979";
+const contractAddress = "0xCfBA2e10Bdcc45d60FCAF657968659841267B238";
 const minimumContribute = 0.1;
 const maximumContribute = 0.5;
 const contractAbi = [
